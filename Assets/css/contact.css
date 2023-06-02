@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
-  .footer .container1{
+  #footer .container1{
     max-width: 1170px;
     margin:auto;
   }
@@ -11,7 +11,7 @@
   ul{
     list-style: none;
   }
-  .footer{
+  #footer{
     background:url("https://static.vecteezy.com/system/resources/thumbnails/012/186/625/small_2x/fast-food-seamless-outline-pattern-design-free-vector.jpg") center ;
     
       padding: 70px 0;

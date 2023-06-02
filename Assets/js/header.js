@@ -13,23 +13,27 @@ closeInput.addEventListener('click',
         searchInput.classList.remove('open')
     })
 
-const back_color_menu = document.querySelector('.menu')
-window.addEventListener('wheel', function (event) {
-    var delta = event.deltaY; // Lấy giá trị delta cuộn chuột
+    const back_color_menu = document.querySelector('.menu');
+    const slider = document.getElementById('slider');
+  
+    window.addEventListener('scroll', function() {
+      const sliderRect = slider.getBoundingClientRect();
+      const windowHeight = window.innerHeight;
+      const scrollPosition = window.scrollY;
+  
+      if (sliderRect.bottom <= windowHeight && scrollPosition >= sliderRect.top) {
+        down();
+      } else {
+  up();
+      }
+    });
+  
     function down() {
-        back_color_menu.classList.add('menu-scroll-down')
-
+      back_color_menu.classList.add('menu-scroll-down');
     }
     function up() {
-        back_color_menu.classList.remove('menu-scroll-down')
-
+      back_color_menu.classList.remove('menu-scroll-down');
     }
-    if (delta > 0) {
-        down()
-    } else {
-        up()
-    }
-});
 var counter = 1;
         setInterval(function(){
             document.getElementById('radio' + counter).checked = true;
