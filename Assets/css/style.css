@@ -65,6 +65,9 @@ html {
     position: relative;
     display: inline-block;
 }
+#nav li i{
+    color: white;
+}
 
 #nav li:hover a {
     transition: 0.6s;
