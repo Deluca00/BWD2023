@@ -1,0 +1,131 @@
+#pofo {
+    border-top:2px solid #666 ;
+    padding-top:3%;
+    text-align: center;
+    width: 100%;
+    height: 650px;
+}
+
+
+.portfolio img {
+    width: 100%;
+}
+
+.portfolio {
+    position: relative;
+    border: 3px solid whitesmoke;
+    border-radius: 5px;
+    width: 100%;
+    margin-top: 5%;
+}
+
+.portfolio:hover .overlay {
+    opacity: 1;
+}
+
+#pof {
+    margin-top: 2% !important;
+    margin: auto 20%;
+
+}
+
+.overlay {
+    background: rgba(236, 228, 217, 0.75);
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transition: .5s;
+    opacity: 0;
+}
+
+.hover_text i {
+    margin: 20% auto;
+    font-size: 50PX;
+    color: darkturquoise;
+    border: solid;
+    border-radius: 30px;
+}
+
+/* Style the buttons */
+.btn {
+    border: none !important;
+    outline: none !important;
+    font-size: 30px !important;
+    padding: 12px 16px !important;
+    background-color: #f1f1f1;
+    color:#666 !important;
+     border:2px solid greenyellow !important;
+     border-radius: 10px !important;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #ddd !important;
+}
+
+.btn.active {
+    background-color: #666 !important;
+    color: white !important;
+}
+
+.container-pop {
+    width: 80%;
+    height: 95%;
+    display: flex;
+    margin: auto;
+    padding: 1px;
+    background-color: antiquewhite;
+    overflow-y: scroll;
+}
+
+.no-padding {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.form {
+    display: none;
+    position: fixed;
+    right: 15px;
+    left: 15px;
+    top: 30px;
+    bottom: 40px;
+    border-radius: 10px;
+    background-color: bisque;
+    opacity: 0.95;
+    z-index: 3333333;
+    align-items: center;
+}
+
+.container {
+    margin-top: 5%;
+}
+
+.container-mini {
+    margin: auto 15%;
+}
+
+.lazyload {
+    width: 100%;
+}
+
+.product-thum {
+    position: relative;
+    border: 3px solid #fff;
+    width: 100%;
+    margin-top: 20%;
+}
+
+.product-thum:hover .overlay {
+    opacity: 1;
+}
+
+#close-cart {
+    position: absolute;
+    color: tomato;
+    top: 0.5cm;
+    right: 0.5cm;
+    font-size: 1cm;
+    cursor: pointer;
+}
