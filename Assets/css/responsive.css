@@ -1,17 +1,22 @@
 /* PC */
-@media (min-width: 1024px){
-    
+@media (min-width: 1024px) {}
+
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+  #header {
+    font-size: 12px;
   }
-  
-  /* Tablet */
-  @media (min-width: 740px) and (max-width: 1023px){
-    #header {
-        font-size: 10px;
-    }
+}
+
+/* Mobile */
+@media (max-width: 740px) {
+  #nav {
+    display: none;
   }
-  
-  
-  /* Mobile */
-  @media (max-width: 740px) {
-       
+  .menu-btn{
+    float: right;
+    line-height: 87px;
+    display: inline;
+    font-size: 30px ;
   }
+}

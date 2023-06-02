@@ -45,14 +45,18 @@ html {
     line-height: 87px;
     top: 0;
     width: 80%;
+    align-items: center;
 }
+
 
 #header img {
     width: 25px;
     padding-top: 10px;
 }
 
-
+.menu-btn{
+    display: none;
+}
 #nav {
     display: inline-block;
     list-style: none;
