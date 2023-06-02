@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <title>Document</title>
+</head>
+<style>
+    body {
+        font-size: 15px;
+        line-height: 1.5;
+    }
+    h1{
+        color: #FF4500;
+    }
+    p{
+        color: black;
+        font-family: 'Lexend Deca', sans-serif ;
+        padding: 5px 20px;
+        font-size: 25px;
+    }
+
+    i{
+        margin: 0px 10px;
+    }
+    #warrper {
+        width: 90%;
+        margin: 0 auto;
+        background-color: #FFEBCD;
+    }
+
+    #header {
+        
+        padding: 25px 0px;
+        text-transform: uppercase;
+        color: red;
+        font-size: 50px;
+        font-weight: 500;
+        font-family: 'Dancing Script', cursive;
+
+    }
+
+    #wp-content {
+        display: flex;
+    }
+
+    #content {
+        order: 2;
+        min-height: 350px;
+        padding: 15px;
+        
+        flex-basis: 60%;
+    }
+
+    #sidebar {
+        order: 1;
+        flex-basis: 40%;
+       
+        padding: 15px;
+    }
+
+    #footer {
+        
+        padding: 8px 0px;
+        color: #fff;
+
+    }
+
+    .text-center {
+        text-align: center;
+    }
+
+
+  
+    
+    /*phan footer*/
+    .nav-tabs{
+        display: flex;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        border-bottom: 2px solid #FF8C00;
+        text-align: center;
+    }
+
+    .nav-tabs li:first-child{
+        margin-left: 40%;
+    }
+    .nav-tabs li{
+        margin-right: 15px;
+    }
+
+    .nav-tabs li a {
+        display: block;
+        padding: 10px;
+        text-decoration: none;
+        position: relative;
+        color: #FF7F50;
+        font-size: 20px;
+        font-weight: 500;
+        font-size: 30px;
+
+    }
+    .nav-tabs li a::after{
+        content: "";
+        height: 3px;
+        width: 100%;
+        
+        background: transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .nav-tabs li.active a::after ,.nav-tabs li:hover a::after{
+        background: orange;
+    }
+
+    /*tab-content*/
+
+    .tab-content{
+        padding: 20px ;
+    }
+
+    /*sidebar*/
+    .anh {
+      position: relative;
+      height: 100%;
+    }
+    .anh {
+      
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+    .anh {
+      background:#FFEBCD;
+      color: #000;
+    }
+
+    swiper-container {
+      width: 100%;
+      height: 100%;
+    }
+
+    swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    swiper-slide img {
+      
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+   
+
+    swiper-container {
+      width: 450px;
+      height: 50px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    swiper-slide {
+      background-size: cover;
+      background-position: center;
+    }
+
+    .mySwiper {
+      height: 330px;
+      width: 500px;
+    }
+
+    .mySwiper2 {
+      height: 97px;
+      box-sizing: border-box;
+      padding: 10px 0;
+    }
+
+    .mySwiper2 swiper-slide {
+      width: 35%;
+      height: 100%;
+      opacity: 0.4;
+    }
+
+    .mySwiper2 .swiper-slide-thumb-active {
+      opacity: 1;
+    }
+
+    swiper-slide img {
+     
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+
+
+    /*Mobile :width<740px */
+    @media(max-width: 767px){
+    
+  
+  }
+  @media(max-width: 574px){
+   
+  }
+</style>
+
+<body>
+    <div id="warrper">
+        <div id="header" class="text-center">
+            <i class="fa-sharp fa-solid fa-utensils" style="color: #fe0101;"></i>  Hủ Tíu Chay   <i class="fa-sharp fa-solid fa-utensils" style="color: #fe0101;"></i>
+        </div>
+
+        <div id="wp-content">
+
+            <div id="content">
+                <p>Là món ăn tuyệt vời để bạn đổi vị cho bữa ăn gia đình hoặc làm mới thực đơn trong những ngày rằm, đầu tháng. Vị thanh đạm do được chế biến từ củ quả đã giúp món ăn không chỉ phù hợp với khẩu vị nhiều người mà còn rất bổ dưỡng.
+
+
+                </p>
+            </div>
+
+            <div id="sidebar">
+               <div class="anh">
+                <swiper-container style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="mySwiper"
+                  thumbs-swiper=".mySwiper2" loop="true" space-between="10" navigation="true">
+                  <swiper-slide>
+                    <img src="../Assets/images 2/hutiuchay/hutiu1.png" title="Hủ Tíu Chay"/>
+                  </swiper-slide>
+                  <swiper-slide>
+                    <img src="../Assets/images 2/hutiuchay/hutiu2.png" title="Bánh đa"/>
+                  </swiper-slide>
+                  <swiper-slide>
+                    <img src="../Assets/images 2/hutiuchay/hutiu3.png" title="Nấm" />
+                  </swiper-slide>
+                  <swiper-slide>
+                    <img src="../Assets/images 2/hutiuchay/hutiu4.png" title="Hủ Tíu" />
+                  </swiper-slide>
+                  <swiper-slide>
+                    <img src="../Assets/images 2/hutiuchay/hutiu5.png" title="Đậu Miếng" />
+                  </swiper-slide>
+                 
+                 
+                </swiper-container>
+              
+                <swiper-container class="mySwiper2" loop="true" space-between="10" slides-per-view="4" free-mode="true"
+                  watch-slides-progress="true">
+                  <swiper-slide>
+                    <img src="../Assets/images 2/hutiuchay/hutiu1.png" title="Hủ Tíu Chay"/>
+                  </swiper-slide>
+                  <swiper-slide>
+                    <img src="../Assets/images 2/hutiuchay/hutiu2.png" title="Bánh đa"/>
+                  </swiper-slide>
+                  <swiper-slide>
+                    <img src="../Assets/images 2/hutiuchay/hutiu3.png" title="Nấm" />
+                  </swiper-slide>
+                  <swiper-slide>
+                    <img src="../Assets/images 2/hutiuchay/hutiu4.png" title="Hủ Tíu" />
+                  </swiper-slide>
+                  <swiper-slide>
+                    <img src="../Assets/images 2/hutiuchay/hutiu5.png" title="Đậu Miếng" />
+                  </swiper-slide>
+                  
+                  
+                  
+                </swiper-container>
+              
+                <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="footer">
+            <div class="tabs">
+                <ul class="nav-tabs">
+                    <li class="active"><a href="#muc-1">Chuẩn bị</a></li>
+                    <li><a href="#muc-2">Cách làm</a></li>
+                </ul>
+                <div class="tab-content">
+                    <div id="muc-1" class="tab-content-item">
+                        <h1>Thời gian</h1>
+                        <p>10 phút</p>
+                        <h1>Nguyên liệu</h1>
+                        <p> - Nấm đông cô: 200 gr <br>
+                            - Hành boa rô: 80 gr <br>
+                            - Vỏ hoành thánh: 100 gr <br>
+                            - Đậu hũ trắng: 300 gr <br>
+                            - Bắp Mỹ: 200 gr <br>
+                            - Nước: 2 lít , Đường phèn: 10 gr , Muối: 13 gr , Tiêu: 2 gr , Dầu ăn: 20 ml ,Hạt nêm chay: 10 gr <br>
+                            - Hủ tiếu: 500 gr <br>
+                            - Cà rốt, củ cải trắng, cải thảo, khoai môn, khoai lang: 100 gr mỗi loại. <br>
+                            
+                             </p>
+                    </div>
+
+                    <div id="muc-2" class="tab-content-item">
+                        <h1>Thời gian</h1>
+                        <p>20 phút</p>
+                        <h1>Công thức :</h1>
+                        <p>- Bước 1: Làm hoành thánh chay: Khoai môn và khoai lang hấp chín, dùng nĩa nghiền khoai cho mịn nhuyễn. Cho vào tô khoai môn, khoai lang, nấm đông cô băm nhỏ, thêm hành boa rô cắt nhỏ. Nêm gia vị gồm dầu ăn, hạt nêm chay, tiêu xay. Dùng muỗng trộn đều các nguyên liệu với nhau. Múc một muỗng nhỏ nhân vào lá hoành thánh, dùng tay gấp và xếp tròn lá hoành thánh lại với nhau.
+                            <br><br>
+                            - Bước 2: Đun nóng dầu ăn, cho hành boa rô cắt lát vào phi vàng thơm, sau đó vớt hành ra, tiếp tục cho 300gr đậu hũ trắng cắt miếng vuông vào chiên vàng đều các mặt. Tiếp theo cho hoành thánh vào chiên vàng giòn.
+                            <br><br>
+                            - Bước 3: Nấu nước dùng chay: Chuẩn bị nồi lớn, cho lê cắt miếng, bắp Mỹ cắt khúc, hành boa rô cắt khúc và muối, đổ vào 2 lít nước. Đậy nắp và hầm nhỏ lửa trong 60 phút.
+                            <br><br>
+                            - Bước 4: Sau khi hầm 60 phút, vớt bỏ phần xác rau củ, lọc lấy nước dùng. Cho vào cà rốt, củ cải trắng cắt lát và 100gr nấm đông cô vào nấu khoảng 20 phút. Sau đó cho cải thảo cắt khúc vào và nêm gia vị gồm muối 10 gr, hạt nêm chay 5gr và đường phèn 10gr. Dùng muỗng khuấy đều, đợi hỗn hợp sôi thêm lần nữa thì tắt bếp.
+                            <br><br>
+                            - Bước 5: Trụng hủ tiếu cho vào tô, thêm các topping gồm đậu hũ chiên, hoành thánh, ngò rí, hành boa rô phi vàng, tiêu, rau củ và chan nước dùng. Hủ tiếu chay ăn kèm tàu hũ ki chiên giòn và rau giá rất ngon.
+                            <br><br>
+                            
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/3l3BysiJ6vk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+
+<script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+
+<script>
+    $(document).ready(function(){
+        $('.tab-content-item').hide();
+        $('.tab-content-item:first-child').fadeIn();
+        $('.nav-tabs li').click(function(){
+            $('.nav-tabs li').removeClass('active');
+            $(this).addClass('active');
+
+            let id_tab_content=$(this).children('a').attr('href');
+            $('.tab-content-item').hide();
+            $(id_tab_content).fadeIn();
+            return false;
+        });
+    });
+</script>
+</html>
