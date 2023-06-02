@@ -28,6 +28,14 @@
     i{
         margin: 0px 10px;
     }
+    #close-cart {
+      position: absolute;
+      color: tomato;
+      top: 30px;
+      right: 110px;
+      font-size: 1cm;
+      cursor: pointer;
+  }
     #warrper {
         width: 90%;
         margin: 0 auto;
@@ -223,7 +231,7 @@
 </style>
 
 <body>
-    <div id="warrper">
+  <div id="warrper">
         <div id="header" class="text-center">
             <i class="fa-sharp fa-solid fa-utensils" style="color: #fe0101;"></i>  Canh Bí Đỏ    <i class="fa-sharp fa-solid fa-utensils" style="color: #fe0101;"></i>
         </div>
@@ -235,8 +243,7 @@
 
                 </p>
             </div>
-
-            <div id="sidebar">
+                <div id="sidebar">
                <div class="anh">
                 <swiper-container style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="mySwiper"
                   thumbs-swiper=".mySwiper2" loop="true" space-between="10" navigation="true">
@@ -320,6 +327,7 @@
                 </div>
             </div>
         </div>
+        <a href="../index.html"><i class="fa-solid fa-x" id="close-cart" aria-hidden="true" ></i></a>
     </div>
 </body>
 
