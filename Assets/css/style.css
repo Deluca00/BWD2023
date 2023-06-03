@@ -22,7 +22,9 @@ html {
 .menu-scroll-down{
     background-color: rgba(0, 0, 255, 0.5);
 }
-
+.show-menu{
+    right: 0;
+}
 .search-input {
     border-radius: 50px;
     border: 1px solid yellow;
@@ -47,8 +49,6 @@ html {
     width: 80%;
     align-items: center;
 }
-
-
 #header img {
     width: 25px;
     padding-top: 10px;
