@@ -1,3 +1,5 @@
+
+
 const search = document.querySelector('.js-search-btn')
 const searchInput = document.querySelector('.search-input')
 const closeInput = document.querySelector('.js-search-close');
@@ -13,6 +15,22 @@ closeInput.addEventListener('click',
         searchInput.classList.remove('open')
     })
 
+
+const navMenu = document.querySelector("#nav-menu")
+const navToggle = document.querySelector("#nav-btn")
+const navClose = document.querySelector("#nav-close")
+
+if (navToggle) {
+    navToggle.addEventListener("click", () => {
+        navMenu.classList.add("show-menu")
+    })
+}
+
+if (navClose) {
+    navClose.addEventListener("click", () => {
+        navMenu.classList.remove("show-menu")
+    })
+}
     const back_color_menu = document.querySelector('.menu');
     const slider = document.getElementById('slider');
   
