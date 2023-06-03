@@ -9,13 +9,15 @@
     <!-- news -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&family=Roboto:ital,wght@0,300;0,400;1,100;1,300&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&family=Roboto:ital,wght@0,300;0,400;1,100;1,300&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     <link rel="stylesheet" href="./Assets/css/news.css">
     <!-- news -->
-   
+
     <link rel="stylesheet" href="./Assets/css/style.css">
     <link rel="stylesheet" href="./Assets/css/contact.css">
     <link rel="stylesheet" href="./Assets/css/profo.css">
@@ -32,35 +34,34 @@
         <!-- begin: menu -->
         <div>
 
-        
-        <div class=" nav-menu menu" id="nav-menu">
-            <!-- begin: header -->
-            <div id="header" >
-                <a href=""><img src="./Assets/Images/logo.png" alt="logo-hat-chef"></a>
-                <ul id="nav">
-                    <li><a href="#slider">TRANG CHỦ</a></li>
-                    <li><a href="#WWD">GIỚI THIỆU</a></li>
-                    <li><a href="#pofo">SẢN PHẨM</a></li>
-                    <li><a href="#comment">NHẬN XÉT</a></li>
-                    <li><a href="#footer">LIÊN HỆ</a></li>
-                    <li class="js-search-btn">
-                            <i  class="fa-solid fa-magnifying-glass"></i>
-                        <input class="search-input" type="text" name="" id="" placeholder="Search">
-                    </li>
-                </ul> 
+
+            <div class=" nav-menu menu" id="nav-menu">
+                <!-- begin: header -->
+                <div id="header">
+                    <a href=""><img src="./Assets/Images/logo.png" alt="logo-hat-chef"></a>
+                    <ul id="nav">
+                        <li><a href="#slider">TRANG CHỦ</a></li>
+                        <li><a href="#WWD">GIỚI THIỆU</a></li>
+                        <li><a href="#pofo">SẢN PHẨM</a></li>
+                        <li><a href="#comment">NHẬN XÉT</a></li>
+                        <li><a href="#footer">LIÊN HỆ</a></li>
+                        <li class="js-search-btn">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <input class="search-input" type="text" name="" id="" placeholder="Search">
+                        </li>
+                    </ul>
+                </div>
+                <!-- end: header -->
+                <div id="menu-btn">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+
             </div>
-            <!-- end: header -->
-            <div id="menu-btn">
-                <i class="fa-solid fa-bars"></i>
+            <div>
+                <i class="fa-solid fa-x  nav-close" id="nav-close" aria-hidden="true"></i>
             </div>
-           
+            <!-- end: menu -->
         </div>
-           <div>
-            <i class="fa-solid fa-x  nav-close" id="nav-close" aria-hidden="true"
-           ></i>
-           </div> 
-        <!-- end: menu -->
-         </div>
         <!-- begin: slider -->
         <div id="slider">
             <div class="black-layer js-search-close">
@@ -108,27 +109,26 @@
         <!-- begin: What we do  -->
 
         <div id="WWD">
-            <h2>CCC</h2>
+            <h2>GIỚI THIỆU</h2>
             <img src="./Assets/Images/separator.png" alt="">
 
             <div class="content-WWD">
                 <div class="wwd-list">
                     <img src="./Assets/Images/service.png" alt="">
-                    <h3>HAMBURGERS</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In consectetur convallis nunc, at
-                        ullamcorper turpis gravida nec. Praesent eu ultrices nunc.</p>
+                    <h3>TỔNG QUÁT</h3>
+                    <p>Website đầu bếp tại gia hướng dẫn nấu ăn nhanh gọn, tiện ích, thơm ngon và cực kì dễ dàng</p>
                 </div>
                 <div class="wwd-list">
                     <img src="./Assets/Images/service2.png" alt="">
-                    <h3>MUFFINS</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In consectetur convallis nunc, at
-                        ullamcorper turpis gravida nec. Praesent eu ultrices nunc.</p>
+                    <h3>TIỆN DỤNG</h3>
+                    <p>Cung cấp khá nhiều công thức nấu ăn hấp dẫn, Các công thức nấu ăn đều có hình minh họa với các
+                        bước cụ thể để giúp bạn dễ hình dung hơn quá trình làm</p>
                 </div>
                 <div class="wwd-list">
                     <img src="./Assets/Images/service3.png" alt="">
-                    <h3>SALT AND PEPPER</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In consectetur convallis nunc, at
-                        ullamcorper turpis gravida nec. Praesent eu ultrices nunc.</p>
+                    <h3>MINH HỌA</h3>
+                    <p>Các công thức nấu ăn đều có hình minh họa với các bước cụ thể để giúp bạn dễ hình dung hơn quá trình làm.
+                        Có các video dạy nấu ăn trên kênh Youtube </p>
                 </div>
             </div>
         </div>
@@ -139,178 +139,83 @@
                 <button class="btn" onclick="filterSelection('ingredient','thit')">THỊT</button>
                 <button class="btn" onclick="filterSelection('ingredient','diemtam')">ĐIỂM TÂM</button>
                 <button class="btn" onclick="filterSelection('ingredient','dochay')">ĐỒ CHAY</button>
-    
+
             </div>
             <section id="pof">
-                    <div class="row">
-                        <div class="col-md-4 mix cat1 cat4 ingredient haisan top10">
-                            <div class="portfolio">
-                                <img src="./assets/images/pf1.jpg" alt="">
-                                <div class="overlay">
-                                    <div class="hover_text">
-                                        <i class="fa-sharp fa-solid fa-plus" onclick="openForm('formhaisan')"></i>
-                                    </div>
+                <div class="row">
+                    <div class="col-md-4 mix cat1 cat4 ingredient haisan top10">
+                        <div class="portfolio">
+                            <img src="./assets/images/pf1.jpg" alt="">
+                            <div class="overlay">
+                                <div class="hover_text">
+                                    <i class="fa-sharp fa-solid fa-plus" onclick="openForm('formhaisan')"></i>
                                 </div>
                             </div>
-                            <div class="form container-pop" id="formhaisan">
-                                <section id="sanpham" class="section_tab_product">
-                                    <div class="bg_module">
-                                        <div class="container">
-                                            <div id="filter">
-                                                <button class="btn active"
-                                                    onclick="filterSelection('fishh','all')">All</button>
-                                                <button class="btn" onclick="filterSelection('fishh','tom')">TÔM</button>
-                                                <button class="btn" onclick="filterSelection('fishh','cahoi')">CÁ
-                                                    HỒI</button>
-                                                <button class="btn" onclick="filterSelection('fishh','muc')">MỰC</button>
-                                            </div>
-                                            <div class="row container-mini">
-                                                <div class="col-xl-3 col-lg-5 col-sm-15 fishh tom">
-                                                    <div class="product">
-                                                        <div class="product-thum">
-                                                            <img class="lazyload" src="./assets/images 2/tomhapbia.jpg">
-                                                            <h3>Tôm hấp bia</h3>
-                                                            <div class="overlay">
-                                                                <div class="hover_text">
-                                                                    <a href="./layout/haisan_tom_tomhap.html"><i class="fa-sharp fa-solid fa-plus" ></i></a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-xl-3 col-lg-5 col-sm-15 fishh cahoi">
-                                                    <div class="product">
-                                                        <div class="product-thum">
-                                                            <img class="lazyload" src="./assets/images 2/cahoisotcam.jpg">
-                                                            <h3>Cá hồi sốt cam</h3>
-                                                            <div class="overlay">
-                                                                <div class="hover_text">
-                                                                    <a href="./layout/haisan_ca_cahoisotcam.html"><i class="fa-sharp fa-solid fa-plus" ></i></a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-xl-3 col-lg-5 col-sm-15 fishh cahoi">
-                                                    <div class="product">
-                                                        <div class="product-thum">
-                                                            <img class="lazyload" src="./assets/images 2/salatcahoi.jpg">
-                                                            <h3>Salad cá hồi</h3>
-                                                            <div class="overlay">
-                                                                <div class="hover_text">
-                                                                    <a href="./layout/haisan_ca_shalatcahoi.html"><i class="fa-sharp fa-solid fa-plus" ></i></a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-xl-3 col-lg-5 col-sm-15 fishh muc">
-                                                    <div class="product">
-                                                        <div class="product-thum">
-                                                            <img class="lazyload" src="./assets/images 2/mucchien.jpg">
-                                                            <h3>Mực nhồi thịt chiên</h3>
-                                                            <div class="overlay">
-                                                                <div class="hover_text">
-                                                                    <a href="./layout/haisan_muc_mucnhoithitchien.html"><i class="fa-sharp fa-solid fa-plus" ></i></a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </section>
-                                <i class="fa-solid fa-x" id="close-cart" aria-hidden="true"
-                                    onclick="closeForm('formhaisan')"></i>
-                            </div>
-    
                         </div>
-                        <div class="col-md-4 mix cat1 cat4 ingredient thit ">
-    
-                            <div class="portfolio">
-                                <img src="./assets/images/pf2.jpg" alt="">
-                                <div class="overlay">
-                                    <div class="hover_text">
-                                        <i class="fa-sharp fa-solid fa-plus" onclick="openForm('formthit')"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form container-pop" id="formthit">
-                                <section id="sanpham" class="section_tab_product">
-                                    <div class="bg_module">
-                                        <div class="container">
-                                            <div id="filter">
-                                                <button class="btn active"
-                                                    onclick="filterSelection('thitt','all')">All</button>
-                                                <button class="btn" onclick="filterSelection('thitt','thitheo')">THỊT
-                                                    HEO</button>
-                                                <button class="btn" onclick="filterSelection('thitt','thitbo')">THỊT
-                                                    BÒ</button>
-    
+                        <div class="form container-pop" id="formhaisan">
+                            <section id="sanpham" class="section_tab_product">
+                                <div class="bg_module">
+                                    <div class="container">
+                                        <div id="filter">
+                                            <button class="btn active"
+                                                onclick="filterSelection('fishh','all')">All</button>
+                                            <button class="btn" onclick="filterSelection('fishh','tom')">TÔM</button>
+                                            <button class="btn" onclick="filterSelection('fishh','cahoi')">CÁ
+                                                HỒI</button>
+                                            <button class="btn" onclick="filterSelection('fishh','muc')">MỰC</button>
+                                        </div>
+                                        <div class="row container-mini">
+                                            <div class="col-xl-3 col-lg-5 col-sm-15 fishh tom">
+                                                <div class="product">
+                                                    <div class="product-thum">
+                                                        <img class="lazyload" src="./assets/images 2/tomhapbia.jpg">
+                                                        <h3>Tôm hấp bia</h3>
+                                                        <div class="overlay">
+                                                            <div class="hover_text">
+                                                                <a href="./layout/haisan_tom_tomhap.html"><i
+                                                                        class="fa-sharp fa-solid fa-plus"></i></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
-                                            <div class="row container-mini">
-                                                <div class="col-xl-3 col-lg-5 col-sm-15 thitt thitheo">
-                                                    <div class="product">
-                                                        <div class="product-thum">
-                                                            <img class="lazyload" src="./assets/images 2/ba roi chien mam.jpg">
-                                                            <h3>Ba rọi chiên mắm</h3>
-                                                            <div class="overlay">
-                                                                <div class="hover_text">
-                                                                    <a href="./layout/thitheo_thitbaroi_baroichienmam.html"><i class="fa-sharp fa-solid fa-plus" ></i></a>
-                                                                </div>
+                                            <div class="col-xl-3 col-lg-5 col-sm-15 fishh cahoi">
+                                                <div class="product">
+                                                    <div class="product-thum">
+                                                        <img class="lazyload" src="./assets/images 2/cahoisotcam.jpg">
+                                                        <h3>Cá hồi sốt cam</h3>
+                                                        <div class="overlay">
+                                                            <div class="hover_text">
+                                                                <a href="./layout/haisan_ca_cahoisotcam.html"><i
+                                                                        class="fa-sharp fa-solid fa-plus"></i></a>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="col-xl-3 col-lg-5 col-sm-15 thitt thitheo">
-                                                    <div class="product">
-                                                        <div class="product-thum">
-                                                            <img class="lazyload" src="./assets/images 2/thitxiennuong.jpg">
-                                                            <h3>thịt xiên nướng</h3>
-                                                            <div class="overlay">
-                                                                <div class="hover_text">
-                                                                    <a href="./layout/thitheo_thitnacvai_thitxiennuong.html"><i class="fa-sharp fa-solid fa-plus" ></i></a>
-                                                                </div>
+                                            </div>
+                                            <div class="col-xl-3 col-lg-5 col-sm-15 fishh cahoi">
+                                                <div class="product">
+                                                    <div class="product-thum">
+                                                        <img class="lazyload" src="./assets/images 2/salatcahoi.jpg">
+                                                        <h3>Salad cá hồi</h3>
+                                                        <div class="overlay">
+                                                            <div class="hover_text">
+                                                                <a href="./layout/haisan_ca_shalatcahoi.html"><i
+                                                                        class="fa-sharp fa-solid fa-plus"></i></a>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="col-xl-3 col-lg-5 col-sm-15 thitt thitheo">
-                                                    <div class="product">
-                                                        <div class="product-thum">
-                                                            <img class="lazyload" src="./assets/images 2/suon_heo_rang_muoi.jpg">
-                                                            <h3>Sườn heo rang muối</h3>
-                                                            <div class="overlay">
-                                                                <div class="hover_text">
-                                                                    <a href="./layout/thitheo_thitsuon_suonheorangmuoi.html"><i class="fa-sharp fa-solid fa-plus" ></i></a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-xl-3 col-lg-5 col-sm-15 thitt thitheo">
-                                                    <div class="product">
-                                                        <div class="product-thum">
-                                                            <img class="lazyload" src="./assets/images 2/suon-sot-me.jpg">
-                                                            <h3>Sườn sốt me</h3>
-                                                            <div class="overlay">
-                                                                <div class="hover_text">
-                                                                    <a href="./layout/thitheo_thitsuon_suonrangme.html"><i class="fa-sharp fa-solid fa-plus" ></i></a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-xl-3 col-lg-5 col-sm-15 thitt thitbo">
-                                                    <div class="product">
-                                                        <div class="product-thum">
-                                                            <img class="lazyload" src="./assets/images 2/thitbonam.jpg">
-                                                            <h3>Bò hầm bia</h3>
-                                                            <div class="overlay">
-                                                                <div class="hover_text">
-                                                                    <a href="./layout/thitbo_thitbonam_bohambia.html"><i class="fa-sharp fa-solid fa-plus" ></i></a>
-                                                                </div>
+                                            </div>
+                                            <div class="col-xl-3 col-lg-5 col-sm-15 fishh muc">
+                                                <div class="product">
+                                                    <div class="product-thum">
+                                                        <img class="lazyload" src="./assets/images 2/mucchien.jpg">
+                                                        <h3>Mực nhồi thịt chiên</h3>
+                                                        <div class="overlay">
+                                                            <div class="hover_text">
+                                                                <a href="./layout/haisan_muc_mucnhoithitchien.html"><i
+                                                                        class="fa-sharp fa-solid fa-plus"></i></a>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -318,247 +223,364 @@
                                             </div>
                                         </div>
                                     </div>
-                                </section>
-    
-                                <i class="fa-solid fa-x" id="close-cart" aria-hidden="true"
-                                    onclick="closeForm('formthit')"></i>
-                            </div>
-    
-    
+                                </div>
+                            </section>
+                            <i class="fa-solid fa-x" id="close-cart" aria-hidden="true"
+                                onclick="closeForm('formhaisan')"></i>
                         </div>
-                        <div class="col-md-4 mix cat1 cat4 ingredient diemtam">
-                            <div class="portfolio">
-                                <img src="./assets/images/pf3.jpg" alt="">
-                                <div class="overlay">
-                                    <div class="hover_text">
-                                        <i class="fa-sharp fa-solid fa-plus" onclick="openForm('formdiemtam')"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form container-pop" id="formdiemtam">
-                                <section id="sanpham" class="section_tab_product">
-                                    <div class="bg_module">
-                                        <div class="container">
-                                            <div class="row container-mini">
-                                                <div class="col-xl-3 col-lg-5 col-sm-15 ">
-                                                    <div class="product">
-                                                        <div class="product-thum">
-                                                            <img class="lazyload" src="./assets/images 2/banh-tart-so-co-la.jpg">
-                                                            <h3>bánh tart socola</h3>
-                                                            <div class="overlay">
-                                                                <div class="hover_text">
-                                                                    <a href="./layout/diemtam_banhtart_socola.html"><i class="fa-sharp fa-solid fa-plus" ></i></a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-xl-3 col-lg-5 col-sm-15">
-                                                    <div class="product">
-                                                        <div class="product-thum">
-                                                            <img class="lazyload" src="./assets/images 2/kemchay/kemchay1.png">
-                                                            <h3>Kem Cháy</h3>
-                                                            <div class="overlay">
-                                                                <div class="hover_text">
-                                                                    <a href="./layout/diemtam_kemchay.html"><i class="fa-sharp fa-solid fa-plus" ></i></a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-xl-3 col-lg-5 col-sm-15 ">
-                                                    <div class="product">
-                                                        <div class="product-thum">
-                                                            <img class="lazyload" src="./assets/images 2/sui_cao.jpg">
-                                                            <h3>sủi cảo</h3>
-                                                            <div class="overlay">
-                                                                <div class="hover_text">
-                                                                    <a href="./layout/diemtam_sui_cao.html"><i class="fa-sharp fa-solid fa-plus" ></i></a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-xl-3 col-lg-5 col-sm-15 ">
-                                                    <div class="product">
-                                                        <div class="product-thum">
-                                                            <img class="lazyload" src="./assets/images 2/xoiman/xoiman1.png">
-                                                            <h3>Xôi Mặn</h3>
-                                                            <div class="overlay">
-                                                                <div class="hover_text">
-                                                                    <a href="./layout/diemtam_xoiman.html"><i class="fa-sharp fa-solid fa-plus" ></i></a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-xl-3 col-lg-5 col-sm-15 ">
-                                                    <div class="product">
-                                                        <div class="product-thum">
-                                                            <img class="lazyload" src="./assets/images 2/thomchuoinong.jpg">
-                                                            <h3>Thơm nồng chuối đốt rượu</h3>
-                                                            <div class="overlay">
-                                                                <div class="hover_text">
-                                                                    <a href="./layout/diemtam_chuoi.html"><i class="fa-sharp fa-solid fa-plus" ></i></a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <i class="fa-solid fa-x" id="close-cart" aria-hidden="true"
-                                                onclick="closeForm('formdiemtam')"></i>
-                                        </div>
-                                    </div>
-                            </div>
-                         </div>
-                        <div class="col-md-4 mix cat1 cat4 ingredient dochay">
-                            <div class="portfolio">
-                                <img src="./assets/images/pf3.jpg" alt="">
-                                <div class="overlay">
-                                    <div class="hover_text">
-                                        <i class="fa-sharp fa-solid fa-plus" onclick="openForm('formdochay')"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form container-pop" id="formdochay">
-                                <section id="sanpham" class="section_tab_product">
-                                    <div class="bg_module">
-                                        <div class="container">
-                                            <div class="row container-mini">
-                                                <div class="col-xl-3 col-lg-5 col-sm-15 ">
-                                                    <div class="product">
-                                                        <div class="product-thum">
-                                                            <img class="lazyload" src="./assets/images 2/dochay_canhbido/bido.png">
-                                                            <h3>Canh Bí Đỏ</h3>
-                                                            <div class="overlay">
-                                                                <div class="hover_text">
-                                                                <a href="./layout/dochay_canhbido.html"><i class="fa-sharp fa-solid fa-plus" ></i></a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-xl-3 col-lg-5 col-sm-15">
-                                                    <div class="product">
-                                                        <div class="product-thum">
-                                                            <img class="lazyload" src="./assets/images 2/canhnam/canhnam1.png">
-                                                            <h3>Canh Nấm Chay</h3>
-                                                            <div class="overlay">
-                                                                <div class="hover_text">
-                                                                    <a href="./layout/dochay_canhnamchay.html"><i class="fa-sharp fa-solid fa-plus" ></i></a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-xl-3 col-lg-5 col-sm-15 ">
-                                                    <div class="product">
-                                                        <div class="product-thum">
-                                                            <img class="lazyload" src="./assets/images 2/cha-gio.jpg">
-                                                            <h3>Chả giò chay(nhân đậu xanh)</h3>
-                                                            <div class="overlay">
-                                                                <div class="hover_text">
-                                                                    <a href="./layout/dochay_chagiochay.html"><i class="fa-sharp fa-solid fa-plus" ></i></a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-xl-3 col-lg-5 col-sm-15 ">
-                                                    <div class="product">
-                                                        <div class="product-thum">
-                                                            <img class="lazyload" src="./assets/images 2/gia-xao-dau-hu.jpg">
-                                                            <h3>GIÁ XÀO ĐẬU HŨ</h3>
-                                                            <div class="overlay">
-                                                                <div class="hover_text">
-                                                                    <a href="./layout/dochay_gia_xao_dau_hu.html"><i class="fa-sharp fa-solid fa-plus" ></i></a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-xl-3 col-lg-5 col-sm-15 ">
-                                                    <div class="product">
-                                                        <div class="product-thum">
-                                                            <img class="lazyload" src="./assets/images 2/hutiuchay/hutiu1.png\">
-                                                            <h3>Hủ Tíu Chay</h3>
-                                                            <div class="overlay">
-                                                                <div class="hover_text">
-                                                                    <a href="./layout/dochay_hutiuchay.html"><i class="fa-sharp fa-solid fa-plus" ></i></a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <i class="fa-solid fa-x" id="close-cart" aria-hidden="true"
-                                                onclick="closeForm('formdochay')"></i>
-                                        </div>
-                                    </div>
-                            </div>
-                         </div>
 
                     </div>
+                    <div class="col-md-4 mix cat1 cat4 ingredient thit ">
+
+                        <div class="portfolio">
+                            <img src="./assets/images/pf2.jpg" alt="">
+                            <div class="overlay">
+                                <div class="hover_text">
+                                    <i class="fa-sharp fa-solid fa-plus" onclick="openForm('formthit')"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form container-pop" id="formthit">
+                            <section id="sanpham" class="section_tab_product">
+                                <div class="bg_module">
+                                    <div class="container">
+                                        <div id="filter">
+                                            <button class="btn active"
+                                                onclick="filterSelection('thitt','all')">All</button>
+                                            <button class="btn" onclick="filterSelection('thitt','thitheo')">THỊT
+                                                HEO</button>
+                                            <button class="btn" onclick="filterSelection('thitt','thitbo')">THỊT
+                                                BÒ</button>
+
+                                        </div>
+                                        <div class="row container-mini">
+                                            <div class="col-xl-3 col-lg-5 col-sm-15 thitt thitheo">
+                                                <div class="product">
+                                                    <div class="product-thum">
+                                                        <img class="lazyload"
+                                                            src="./assets/images 2/ba roi chien mam.jpg">
+                                                        <h3>Ba rọi chiên mắm</h3>
+                                                        <div class="overlay">
+                                                            <div class="hover_text">
+                                                                <a href="./layout/thitheo_thitbaroi_baroichienmam.html"><i
+                                                                        class="fa-sharp fa-solid fa-plus"></i></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-3 col-lg-5 col-sm-15 thitt thitheo">
+                                                <div class="product">
+                                                    <div class="product-thum">
+                                                        <img class="lazyload" src="./assets/images 2/thitxiennuong.jpg">
+                                                        <h3>thịt xiên nướng</h3>
+                                                        <div class="overlay">
+                                                            <div class="hover_text">
+                                                                <a
+                                                                    href="./layout/thitheo_thitnacvai_thitxiennuong.html"><i
+                                                                        class="fa-sharp fa-solid fa-plus"></i></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-3 col-lg-5 col-sm-15 thitt thitheo">
+                                                <div class="product">
+                                                    <div class="product-thum">
+                                                        <img class="lazyload"
+                                                            src="./assets/images 2/suon_heo_rang_muoi.jpg">
+                                                        <h3>Sườn heo rang muối</h3>
+                                                        <div class="overlay">
+                                                            <div class="hover_text">
+                                                                <a
+                                                                    href="./layout/thitheo_thitsuon_suonheorangmuoi.html"><i
+                                                                        class="fa-sharp fa-solid fa-plus"></i></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-3 col-lg-5 col-sm-15 thitt thitheo">
+                                                <div class="product">
+                                                    <div class="product-thum">
+                                                        <img class="lazyload" src="./assets/images 2/suon-sot-me.jpg">
+                                                        <h3>Sườn sốt me</h3>
+                                                        <div class="overlay">
+                                                            <div class="hover_text">
+                                                                <a href="./layout/thitheo_thitsuon_suonrangme.html"><i
+                                                                        class="fa-sharp fa-solid fa-plus"></i></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-3 col-lg-5 col-sm-15 thitt thitbo">
+                                                <div class="product">
+                                                    <div class="product-thum">
+                                                        <img class="lazyload" src="./assets/images 2/thitbonam.jpg">
+                                                        <h3>Bò hầm bia</h3>
+                                                        <div class="overlay">
+                                                            <div class="hover_text">
+                                                                <a href="./layout/thitbo_thitbonam_bohambia.html"><i
+                                                                        class="fa-sharp fa-solid fa-plus"></i></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <i class="fa-solid fa-x" id="close-cart" aria-hidden="true"
+                                onclick="closeForm('formthit')"></i>
+                        </div>
+
+
+                    </div>
+                    <div class="col-md-4 mix cat1 cat4 ingredient diemtam">
+                        <div class="portfolio">
+                            <img src="./assets/images/pf3.jpg" alt="">
+                            <div class="overlay">
+                                <div class="hover_text">
+                                    <i class="fa-sharp fa-solid fa-plus" onclick="openForm('formdiemtam')"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form container-pop" id="formdiemtam">
+                            <section id="sanpham" class="section_tab_product">
+                                <div class="bg_module">
+                                    <div class="container">
+                                        <div class="row container-mini">
+                                            <div class="col-xl-3 col-lg-5 col-sm-15 ">
+                                                <div class="product">
+                                                    <div class="product-thum">
+                                                        <img class="lazyload"
+                                                            src="./assets/images 2/banh-tart-so-co-la.jpg">
+                                                        <h3>bánh tart socola</h3>
+                                                        <div class="overlay">
+                                                            <div class="hover_text">
+                                                                <a href="./layout/diemtam_banhtart_socola.html"><i
+                                                                        class="fa-sharp fa-solid fa-plus"></i></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-3 col-lg-5 col-sm-15">
+                                                <div class="product">
+                                                    <div class="product-thum">
+                                                        <img class="lazyload"
+                                                            src="./assets/images 2/kemchay/kemchay1.png">
+                                                        <h3>Kem Cháy</h3>
+                                                        <div class="overlay">
+                                                            <div class="hover_text">
+                                                                <a href="./layout/diemtam_kemchay.html"><i
+                                                                        class="fa-sharp fa-solid fa-plus"></i></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-3 col-lg-5 col-sm-15 ">
+                                                <div class="product">
+                                                    <div class="product-thum">
+                                                        <img class="lazyload" src="./assets/images 2/sui_cao.jpg">
+                                                        <h3>sủi cảo</h3>
+                                                        <div class="overlay">
+                                                            <div class="hover_text">
+                                                                <a href="./layout/diemtam_sui_cao.html"><i
+                                                                        class="fa-sharp fa-solid fa-plus"></i></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-3 col-lg-5 col-sm-15 ">
+                                                <div class="product">
+                                                    <div class="product-thum">
+                                                        <img class="lazyload"
+                                                            src="./assets/images 2/xoiman/xoiman1.png">
+                                                        <h3>Xôi Mặn</h3>
+                                                        <div class="overlay">
+                                                            <div class="hover_text">
+                                                                <a href="./layout/diemtam_xoiman.html"><i
+                                                                        class="fa-sharp fa-solid fa-plus"></i></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-3 col-lg-5 col-sm-15 ">
+                                                <div class="product">
+                                                    <div class="product-thum">
+                                                        <img class="lazyload" src="./assets/images 2/thomchuoinong.jpg">
+                                                        <h3>Thơm nồng chuối đốt rượu</h3>
+                                                        <div class="overlay">
+                                                            <div class="hover_text">
+                                                                <a href="./layout/diemtam_chuoi.html"><i
+                                                                        class="fa-sharp fa-solid fa-plus"></i></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <i class="fa-solid fa-x" id="close-cart" aria-hidden="true"
+                                            onclick="closeForm('formdiemtam')"></i>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mix cat1 cat4 ingredient dochay">
+                        <div class="portfolio">
+                            <img src="./assets/images/pf3.jpg" alt="">
+                            <div class="overlay">
+                                <div class="hover_text">
+                                    <i class="fa-sharp fa-solid fa-plus" onclick="openForm('formdochay')"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form container-pop" id="formdochay">
+                            <section id="sanpham" class="section_tab_product">
+                                <div class="bg_module">
+                                    <div class="container">
+                                        <div class="row container-mini">
+                                            <div class="col-xl-3 col-lg-5 col-sm-15 ">
+                                                <div class="product">
+                                                    <div class="product-thum">
+                                                        <img class="lazyload"
+                                                            src="./assets/images 2/dochay_canhbido/bido.png">
+                                                        <h3>Canh Bí Đỏ</h3>
+                                                        <div class="overlay">
+                                                            <div class="hover_text">
+                                                                <a href="./layout/dochay_canhbido.html"><i
+                                                                        class="fa-sharp fa-solid fa-plus"></i></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-3 col-lg-5 col-sm-15">
+                                                <div class="product">
+                                                    <div class="product-thum">
+                                                        <img class="lazyload"
+                                                            src="./assets/images 2/canhnam/canhnam1.png">
+                                                        <h3>Canh Nấm Chay</h3>
+                                                        <div class="overlay">
+                                                            <div class="hover_text">
+                                                                <a href="./layout/dochay_canhnamchay.html"><i
+                                                                        class="fa-sharp fa-solid fa-plus"></i></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-3 col-lg-5 col-sm-15 ">
+                                                <div class="product">
+                                                    <div class="product-thum">
+                                                        <img class="lazyload" src="./assets/images 2/cha-gio.jpg">
+                                                        <h3>Chả giò chay(nhân đậu xanh)</h3>
+                                                        <div class="overlay">
+                                                            <div class="hover_text">
+                                                                <a href="./layout/dochay_chagiochay.html"><i
+                                                                        class="fa-sharp fa-solid fa-plus"></i></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-3 col-lg-5 col-sm-15 ">
+                                                <div class="product">
+                                                    <div class="product-thum">
+                                                        <img class="lazyload"
+                                                            src="./assets/images 2/gia-xao-dau-hu.jpg">
+                                                        <h3>GIÁ XÀO ĐẬU HŨ</h3>
+                                                        <div class="overlay">
+                                                            <div class="hover_text">
+                                                                <a href="./layout/dochay_gia_xao_dau_hu.html"><i
+                                                                        class="fa-sharp fa-solid fa-plus"></i></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-3 col-lg-5 col-sm-15 ">
+                                                <div class="product">
+                                                    <div class="product-thum">
+                                                        <img class="lazyload"
+                                                            src="./assets/images 2/hutiuchay/hutiu1.png\">
+                                                        <h3>Hủ Tíu Chay</h3>
+                                                        <div class="overlay">
+                                                            <div class="hover_text">
+                                                                <a href="./layout/dochay_hutiuchay.html"><i
+                                                                        class="fa-sharp fa-solid fa-plus"></i></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <i class="fa-solid fa-x" id="close-cart" aria-hidden="true"
+                                            onclick="closeForm('formdochay')"></i>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+
+                </div>
             </section>
         </div>
         <!-- end: What we do  -->
-        
+
         <!-- begin: comment -->
         <div id="comment">
-           
-                <div class="slider-cmt">
-                    <div class="slides">
-                        <input type="radio" name="radio-btn" id="radio1">
-                        <input type="radio" name="radio-btn" id="radio2">
-                        <input type="radio" name="radio-btn" id="radio3">
-                        <input type="radio" name="radio-btn" id="radio4">
-    
-                        <div class="slide first">
-                            <img src="./Assets/image test/1.jpg" alt="">
-                            <h4>Khanh</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex laboriosam obcaecati eius
-                                repellat commodi mollitia, excepturi doloremque similique minima sit officiis! Repellendus
-                                nesciunt consectetur esse incidunt. Eligendi corrupti tempore accusantium!</p>
-                        </div>
-                        <div class="slide">
-                            <img src="./Assets/image test/4.jpg" alt="">
-                            <h4>Khanh</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex laboriosam obcaecati eius
-                                repellat commodi mollitia, excepturi doloremque similique minima sit officiis! Repellendus
-                                nesciunt consectetur esse incidunt. Eligendi corrupti tempore accusantium!</p>
-                        </div>
-                        <div class="slide">
-                            <img src="./Assets/image test/1.jpg" alt="">
-                            <h4>Khanh</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex laboriosam obcaecati eius
-                                repellat commodi mollitia, excepturi doloremque similique minima sit officiis! Repellendus
-                                nesciunt consectetur esse incidunt. Eligendi corrupti tempore accusantium!</p>
-                        </div>
-                        <div class="slide">
-                            <img src="./Assets/image test/4.jpg" alt="">
-                            <h4>Khanh</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex laboriosam obcaecati eius
-                                repellat commodi mollitia, excepturi doloremque similique minima sit officiis! Repellendus
-                                nesciunt consectetur esse incidunt. Eligendi corrupti tempore accusantium!</p>
-                        </div>
-    
-                        <div class="navigation-auto">
-                            <div class="auto-btn1"></div>
-                            <div class="auto-btn2"></div>
-                            <div class="auto-btn3"></div>
-                            <div class="auto-btn4"></div>
-                        </div>
+
+            <div class="slider-cmt">
+                <div class="slides">
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio2">
+                    <input type="radio" name="radio-btn" id="radio3">
+                    <input type="radio" name="radio-btn" id="radio4">
+
+                    <div class="slide first">
+                        <img src="./Assets/image test/1.jpg" alt="">
+                        <h4>Khanh</h4>
+                        <p>Cung cấp các kiến thức, mẹo hay, bí quyết nấu ăn, làm bánh ngon,... giúp bạn có thêm nhiểu kiến thức nấu bếp hơn.</p>
                     </div>
-                    <div class="navigation-manual">
-                        <label for="radio1" class="manual-btn"></label>
-                        <label for="radio2" class="manual-btn"></label>
-                        <label for="radio3" class="manual-btn"></label>
-                        <label for="radio4" class="manual-btn"></label>
+                    <div class="slide">
+                        <img src="./Assets/image test/4.jpg" alt="">
+                        <h4>Thiện</h4>
+                        <p>Giao diện Tiếng Việt khá đơn giản và bắt mắt.</p>
+                    </div>
+                    <div class="slide">
+                        <img src="./Assets/image test/1.jpg" alt="">
+                        <h4>Bảo</h4>
+                        <p>Các công thức được mô tả rất chi tiết, kèm với hình ảnh minh họa tường bước giúp bạn dễ dàng hình dung các công đoạn.</p>
+                    </div>
+                    <div class="slide">
+                        <img src="./Assets/image test/4.jpg" alt="">
+                        <h4>Hoàng</h4>
+                        <p>Có các video dạy nấu ăn vô cùng chi tiết và hấp dẫn.</p>
+                    </div>
+
+                    <div class="navigation-auto">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                        <div class="auto-btn3"></div>
+                        <div class="auto-btn4"></div>
                     </div>
                 </div>
-    
-           
+                <div class="navigation-manual">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                    <label for="radio4" class="manual-btn"></label>
+                </div>
+            </div>
+
+
 
         </div>
         <!-- end: comment -->
@@ -571,18 +593,19 @@
                         <ul>
                             <li><a href="#"><i class="fa-regular fa-envelope"></i> baolathe0108@gmail.com</a></li>
                             <li><a href="#"><i class="fa-solid fa-phone"></i> 0782087247</a></li>
-                            <li><a href="#"><i class="fa-sharp fa-solid fa-location-dot"></i> 61 Đoàn Nguyễn Tuấn</a></li>
+                            <li><a href="#"><i class="fa-sharp fa-solid fa-location-dot"></i> 61 Đoàn Nguyễn Tuấn</a>
+                            </li>
 
                         </ul>
                     </div>
                     <div class="footer-col">
-                        <h4>Người phụ trách</h4>
+                        <h4>TEAM TAT</h4>
                         <ul>
-                            <li><a href="#">FAQ</a></li>
-                            <li><a href="#">shipping</a></li>
-                            <li><a href="#">returns</a></li>
-                            <li><a href="#">order status</a></li>
-                            <li><a href="#">payment options</a></li>
+                            <li><a href="https://www.facebook.com/profile.php?id=100070373126042">Hồ Thế Bảo</a></li>
+                            <li><a href="https://www.facebook.com/profile.php?id=100022727594702">Võ Thiện</a></li>
+                            <li><a href="https://www.facebook.com/profile.php?id=100017145340114">Huỳnh Ngọc Khanh</a></li>
+                            <li><a href="https://www.facebook.com/quochoang04">Võ Quốc Hoàng</a></li>
+                           
                         </ul>
                     </div>
                     <div class="footer-col">
@@ -597,10 +620,10 @@
                     <div class="footer-col">
                         <h4>follow us</h4>
                         <div class="social-links">
-                            <a href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                            <a href="#"><i class="fab fa-instagram"></i></a>
-                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://twitter.com/?lang=vi"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                            
                         </div>
                     </div>
                 </div>
@@ -610,11 +633,11 @@
     <!-- end : footer -->
     <!--end: main  -->
 </body>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
-    <script src="https://use.fontawesome.com/1744f3f671.js"></script>
-    <script src="/Assets/js/profo.js"></script>
-    <script src="./Assets/js/header.js"></script>
-    <script src="./Assets/js/news.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+<script src="https://use.fontawesome.com/1744f3f671.js"></script>
+<script src="/Assets/js/profo.js"></script>
+<script src="./Assets/js/header.js"></script>
+<script src="./Assets/js/news.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 
 </html>
