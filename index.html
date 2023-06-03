@@ -40,21 +40,23 @@
                     <li><a href="#">SẢN PHẨM</a></li>
                     <li><a href="#">GIỚI THIỆU</a></li>
                     <li><a href="#comment">NHẬN XÉT</a></li>
-                    <li><a href="#footer">LIÊN HỆ</a></li>
+                    <li><a href="#">LIÊN HỆ</a></li>
                     <li class="js-search-btn">
                             <i  class="fa-solid fa-magnifying-glass"></i>
                         <input class="search-input" type="text" name="" id="" placeholder="Search">
                     </li>
-                </ul> 
+                </ul>
+                <span class="menu-btn">
+                    <i class="fa-solid fa-bars"></i>
+                </span>
+                
             </div>
             <!-- end: header -->
-            <span class="menu-btn">
-                <i class="fa-solid fa-bars"></i>
-            </span>
         </div>
         <!-- end: menu -->
 
         <!-- begin: slider -->
+
         <div id="slider">
             <div class="black-layer js-search-close">
                 <swiper-container class="mySwiper" pagination="true" pagination-dynamic-bullets="true">
@@ -153,6 +155,8 @@
                                                 <button class="btn active"
                                                     onclick="filterSelection('fishh','all')">All</button>
                                                 <button class="btn" onclick="filterSelection('fishh','tom')">TÔM</button>
+                                                <button class="btn" onclick="filterSelection('fishh','cachep')">CÁ
+                                                    CHÉP</button>
                                                 <button class="btn" onclick="filterSelection('fishh','cahoi')">CÁ
                                                     HỒI</button>
                                                 <button class="btn" onclick="filterSelection('fishh','muc')">MỰC</button>
@@ -162,10 +166,9 @@
                                                     <div class="product">
                                                         <div class="product-thum">
                                                             <img class="lazyload" src="./assets/images/pf1.jpg">
-                                                            <h3>Tôm hấp bia</h3>
                                                             <div class="overlay">
                                                                 <div class="hover_text">
-                                                                    <a href="./layout/haisan_tom_tomhap.html"><i class="fa-sharp fa-solid fa-plus" ></i></a>
+                                                                    <i class="fa-sharp fa-solid fa-plus"></i>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -175,23 +178,33 @@
                                                     <div class="product">
                                                         <div class="product-thum">
                                                             <img class="lazyload" src="./assets/images/pf1.jpg">
-                                                            <h3>Cá hồi sốt cam</h3>
                                                             <div class="overlay">
                                                                 <div class="hover_text">
-                                                                    <a href="./layout/haisan_ca_cahoisotcam.html"><i class="fa-sharp fa-solid fa-plus" ></i></a>
+                                                                    <i class="fa-sharp fa-solid fa-plus"></i>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="col-xl-3 col-lg-5 col-sm-15 fishh cahoi">
+                                                <div class="col-xl-3 col-lg-5 col-sm-15 fishh cachep">
                                                     <div class="product">
                                                         <div class="product-thum">
                                                             <img class="lazyload" src="./assets/images/pf1.jpg">
-                                                            <h3>Salad cá hồi</h3>
                                                             <div class="overlay">
                                                                 <div class="hover_text">
-                                                                    <a href="./layout/haisan_ca_shalatcahoi.html"><i class="fa-sharp fa-solid fa-plus" ></i></a>
+                                                                    <i class="fa-sharp fa-solid fa-plus"></i>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-3 col-lg-5 col-sm-15 fishh cachep">
+                                                    <div class="product">
+                                                        <div class="product-thum">
+                                                            <img class="lazyload" src="./assets/images/pf1.jpg">
+                                                            <div class="overlay">
+                                                                <div class="hover_text">
+                                                                    <i class="fa-sharp fa-solid fa-plus"></i>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -201,10 +214,9 @@
                                                     <div class="product">
                                                         <div class="product-thum">
                                                             <img class="lazyload" src="./assets/images/pf1.jpg">
-                                                            <h3>Mực nhồi thịt chiên</h3>
                                                             <div class="overlay">
                                                                 <div class="hover_text">
-                                                                    <a href="./layout/haisan_muc_mucnhoithitchien.html"><i class="fa-sharp fa-solid fa-plus" ></i></a>
+                                                                    <i class="fa-sharp fa-solid fa-plus"></i>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -247,10 +259,9 @@
                                                     <div class="product">
                                                         <div class="product-thum">
                                                             <img class="lazyload" src="./assets/images/pf1.jpg">
-                                                            <h3>Ba rọi chiên mắm</h3>
                                                             <div class="overlay">
                                                                 <div class="hover_text">
-                                                                    <a href="./layout/thitheo_thitbaroi_baroichienmam.html"><i class="fa-sharp fa-solid fa-plus" ></i></a>
+                                                                    <i class="fa-sharp fa-solid fa-plus"></i>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -260,10 +271,9 @@
                                                     <div class="product">
                                                         <div class="product-thum">
                                                             <img class="lazyload" src="./assets/images/pf1.jpg">
-                                                            <h3>thịt xiên nướng</h3>
                                                             <div class="overlay">
                                                                 <div class="hover_text">
-                                                                    <a href="./layout/thitheo_thitnacvai_thitxiennuong.html"><i class="fa-sharp fa-solid fa-plus" ></i></a>
+                                                                    <i class="fa-sharp fa-solid fa-plus"></i>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -273,10 +283,9 @@
                                                     <div class="product">
                                                         <div class="product-thum">
                                                             <img class="lazyload" src="./assets/images/pf1.jpg">
-                                                            <h3>Sườn heo rang muối</h3>
                                                             <div class="overlay">
                                                                 <div class="hover_text">
-                                                                    <a href="./layout/thitheo_thitsuon_suonheorangmuoi.html"><i class="fa-sharp fa-solid fa-plus" ></i></a>
+                                                                    <i class="fa-sharp fa-solid fa-plus"></i>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -286,10 +295,9 @@
                                                     <div class="product">
                                                         <div class="product-thum">
                                                             <img class="lazyload" src="./assets/images/pf1.jpg">
-                                                            <h3>Sườn sốt me</h3>
                                                             <div class="overlay">
                                                                 <div class="hover_text">
-                                                                    <a href="./layout/thitheo_thitsuon_suonrangme.html"><i class="fa-sharp fa-solid fa-plus" ></i></a>
+                                                                    <i class="fa-sharp fa-solid fa-plus"></i>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -299,10 +307,9 @@
                                                     <div class="product">
                                                         <div class="product-thum">
                                                             <img class="lazyload" src="./assets/images/pf1.jpg">
-                                                            <h3>Bò hầm bia</h3>
                                                             <div class="overlay">
                                                                 <div class="hover_text">
-                                                                    <a href="./layout/thitbo_thitbonam_bohambia.html"><i class="fa-sharp fa-solid fa-plus" ></i></a>
+                                                                    <i class="fa-sharp fa-solid fa-plus"></i>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -495,7 +502,115 @@
             </section>
         </div>
         <!-- end: What we do  -->
-        
+        <!-- begin: news-cooking -->
+        <div id="news-cooking">
+            <div class="news-content">
+                <div class="backgr1">
+                    <h1>
+                        JOIN OUR NEWSLETTER
+                    </h1>
+                    <p>Suspendisse ac nulla eros. Vestibulum elementum placerat erat ac maximus. Aliquam quis nisi quis arcu dapibus
+                        ornare. Donec vel ex urna. Ut in odio ultricies mauris fringilla placerat commodo in augue.</p>
+                    <div class="dong3">
+                        <input type="text" class="input1" placeholder="first name">
+                        <button class="btn-sub">SUBSCRIBE</button>
+                    </div>
+            
+                    <div class="backgr2">
+                    </div>
+                    <div class="part2">
+                        <p class="title1">WHAT ABOUT FRUITS ?</p>
+                        <div class="separator"></div>
+                    </div>
+                
+                    <div class="main-carousel">
+                        <div class="cell">
+                            <div class="contentslide">
+                                <p class="headslide">READ THIS FIRST</p>
+                                <p class="secondslide"><i class="fa-light fa-clock fa-flip-horizontal"></i> 4 day ago</p>
+                                <p class="mainslide">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In consectetur convallis nunc.</p>
+                                <div class="separator3"></div>
+                            </div>
+                        </div>
+            
+                        <div class="cell">
+                            <div class="contentslide">
+                                <p class="headslide">READ THIS FIRST</p>
+                                <p class="secondslide">4 day ago</p>
+                                <p class="mainslide">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In consectetur convallis nunc.</p>
+                                <div class="separator3"></div>
+                            </div>
+                        </div>
+            
+                        <div class="cell">
+                            <div class="contentslide">
+                                <p class="headslide">READ THIS FIRST</p>
+                                <p class="secondslide">4 day ago</p>
+                                <p class="mainslide">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In consectetur convallis nunc.</p>
+                                <div class="separator3"></div>
+                            </div>
+                        </div>
+            
+                        <div class="cell">
+                            <div class="contentslide">
+                                <p class="headslide">READ THIS FIRST</p>
+                                <p class="secondslide">4 day ago</p>
+                                <p class="mainslide">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In consectetur convallis nunc.</p>
+                                <div class="separator3"></div>
+                            </div>
+                        </div>
+            
+                        <div class="cell">
+                            <div class="contentslide">
+                                <p class="headslide">READ THIS FIRST</p>
+                                <p class="secondslide">4 day ago</p>
+                                <p class="mainslide">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In consectetur convallis nunc.</p>
+                                <div class="separator3"></div>
+                            </div>
+                        </div>
+            
+                        <div class="cell">
+                            <div class="contentslide">
+                                <p class="headslide">READ THIS FIRST</p>
+                                <p class="secondslide">4 day ago</p>
+                                <p class="mainslide">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In consectetur convallis nunc.</p>
+                                <div class="separator3"></div>
+                            </div>
+                        </div>
+            
+                        <div class="cell">
+                            <div class="contentslide">
+                                <p class="headslide">READ THIS FIRST</p>
+                                <p class="secondslide">4 day ago</p>
+                                <p class="mainslide">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In consectetur convallis nunc.</p>
+                                <div class="separator3"></div>
+                            </div>
+                        </div>
+            
+                        <div class="cell">
+                            <div class="contentslide">
+                                <p class="headslide">READ THIS FIRST</p>
+                                <p class="secondslide">4 day ago</p>
+                                <p class="mainslide">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In consectetur convallis nunc.</p>
+                                <div class="separator3"></div>
+                            </div>
+                        </div>
+            
+                        <div class="cell">
+                            <div class="contentslide">
+                                <p class="headslide">READ THIS FIRST</p>
+                                <p class="secondslide">4 day ago</p>
+                                <p class="mainslide">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In consectetur convallis nunc.</p>
+                                <div class="separator3"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    
+            </div>
+        </div>
+        <!-- end: news-cooking -->
         <!-- begin: comment -->
         <div id="comment">
            
