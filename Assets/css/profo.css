@@ -3,7 +3,7 @@
     padding-top:3%;
     text-align: center;
     width: 100%;
-   padding-bottom: 100px;
+     padding-bottom: 100px;
 }
 .portfolio img {
     width: 100%;
@@ -112,6 +112,7 @@
     position: relative;
     border: 3px solid #fff;
     width: 100%;
+    height: 380px;
     margin-top: 20%;
 }
 .product-thum img{
