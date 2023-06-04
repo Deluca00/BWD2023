@@ -15,22 +15,8 @@ closeInput.addEventListener('click',
         searchInput.classList.remove('open')
     })
 
+   
 
-const navMenu = document.querySelector("#nav-menu")
-const navToggle = document.querySelector("#nav-btn")
-const navClose = document.querySelector("#nav-close")
-
-if (navToggle) {
-    navToggle.addEventListener("click", () => {
-        navMenu.classList.add("show-menu")
-    })
-}
-
-if (navClose) {
-    navClose.addEventListener("click", () => {
-        navMenu.classList.remove("show-menu")
-    })
-}
     const back_color_menu = document.querySelector('.menu');
     const slider = document.getElementById('slider');
   
@@ -61,3 +47,11 @@ var counter = 1;
 
             }
         }, 5000);
+
+
+  const btn = document.querySelector('.menu-btn');
+
+  btn.addEventListener('click',
+    function (event) {
+      back_color_menu.classList.add('add')
+    })

@@ -57,6 +57,9 @@ html {
 .menu-btn{
     display: none;
 }
+#nav-close{
+    display: none;
+}
 #nav {
     display: inline-block;
     list-style: none;
@@ -279,3 +282,4 @@ background: #40D3DC;
 background: #40D3DC;
 
 }
+
