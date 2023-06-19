@@ -77,6 +77,8 @@ i{
 /*phan footer*/
 .nav-tabs{
     display: flex;
+    justify-content: center;
+    align-items: center;
     list-style: none;
     padding: 0;
     margin: 0;
@@ -84,9 +86,7 @@ i{
     text-align: center;
 }
 
-.nav-tabs li:first-child{
-    margin-left: 40%;
-}
+
 .nav-tabs li{
     margin-right: 15px;
 }
@@ -233,9 +233,7 @@ swiper-slide img {
   p{
     font-size: 20px;
   }
-  .nav-tabs li a:first-child {
-    margin-left:-20px; 
-  }
+
 
  
   
@@ -261,9 +259,6 @@ swiper-slide img {
   }
   p{
     font-size: 20px;
-  }
-  .nav-tabs li a:first-child {
-    margin-left:-20px; 
   }
   
   
