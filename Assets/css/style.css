@@ -57,6 +57,9 @@ html {
 .menu-btn{
     display: none;
 }
+#nav-close{
+    display: none;
+}
 #nav {
     display: inline-block;
     list-style: none;
@@ -145,6 +148,7 @@ swiper-slide {
     cursor: pointer;
 }
 
+/* css for introduce  */
 #WWD {
     text-align: center;  
     width: 100%;
@@ -178,6 +182,34 @@ swiper-slide {
     height: 100px;
 }
 
+/* css for sub-member */
+
+#sub-member{
+    width: 100%;
+    margin-bottom: 100px;
+    display: flex;
+    background-color: aliceblue;
+    justify-content: center;
+    padding-top: 50px;
+    text-align: center;
+}
+
+#sub-member .sub-content h2{
+    margin-bottom: 16px;
+}
+.sub-button{
+    margin: 32px 0;
+    width: 300px;
+    height: 50px;
+    border: none;
+    border-radius: 30px;
+    background-color: #5e9a28;
+    color: white;
+}
+.sub-button:hover{
+    background-color: #115419;
+}
+/* css for comment */
 #comment{
     margin: 0;
     padding: 0;
@@ -279,3 +311,4 @@ background: #40D3DC;
 background: #40D3DC;
 
 }
+
