@@ -204,15 +204,11 @@ swiper-slide img {
   height: 100%;
   object-fit: cover;
 }
-iframe{
-  margin-left: 400px;
-}
 
-
-@media(min-width:970px)and (max-width: 1339px){
-  iframe{
-    margin-left: 20%;
-  }
+.video{
+  display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -241,9 +237,7 @@ iframe{
     margin-left:-20px; 
   }
 
-  iframe{
-    margin-left: 90px;
-  }
+ 
   
 }
 
@@ -274,10 +268,5 @@ iframe{
   
   
 }
-@media (max-width: 800px){
-  iframe{
-    margin: 0;
-    width: 450px;
-  }
-}
+
 
