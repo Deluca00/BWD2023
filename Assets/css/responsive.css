@@ -101,7 +101,7 @@
     transition: .2s;
   }
 
-  #WWD .content-WWD{
+  #WWD .content-WWD {
     width: 100%;
   }
 
@@ -110,7 +110,18 @@
 
   }
 
-  #WWD .content-WWD img{
+  #WWD .content-WWD img {
     margin: 0 0 20px 0;
+  }
+
+  .img-food {
+    display: flex;
+    justify-content: center;
+  }
+
+  .food-img {
+    width: 80%;
+    height: auto;
+
   }
 }
