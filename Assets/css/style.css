@@ -49,9 +49,12 @@ html {
     width: 80%;
     align-items: center;
 }
-#header img {
+#header .imglogo {
     width: 25px;
-    padding-top: 10px;
+    
+}
+.img-hidden{
+    display: none;
 }
 
 .menu-btn{
@@ -166,6 +169,7 @@ swiper-slide {
     width: 80%;
     margin: auto;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 #WWD .content-WWD .wwd-list{
