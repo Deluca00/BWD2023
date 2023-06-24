@@ -15,66 +15,71 @@
 <body>
     <div id="meal">
         <div  id="nav-menu">
-            <div class="nav-menu menu">
-                <!-- begin: header -->
-                <div id="header">
-                    <a href=""><img src="./Assets/Images/logo.png" alt="logo-hat-chef"></a>
-                    <ul id="nav">
-                        <li><a href="#slider">TRANG CHỦ</a></li>
-                        <li><a href="#WWD">GIỚI THIỆU</a></li>
-                        <li><a href="#pofo">SẢN PHẨM</a></li>
-                        <li><a href="#comment">NHẬN XÉT</a></li>
-                        <li><a href="#footer">LIÊN HỆ</a></li>
-                        <li class="js-search-btn">
-                            <i class="fa-solid fa-magnifying-glass"></i>
-                            <input class="search-input" type="text" name="" id="" placeholder="Search">
-                        </li>
-                    </ul>
-                </div>
-                <!-- end: header -->
-                <div class="menu-btn">
-                    <i class="fa-solid fa-bars"></i>
-                </div>
+                <div class="nav-menu menu" id="nav-menu">
+                    <!-- begin: header -->
+                    <div id="header">
+                        <a href=""><img class="imglogo" src="./Assets/Images/logo.png" alt="logo-hat-chef"></a>
+                        <a href=""><img class="img-hidden" src="" alt="logo-hat-chef"></a>
+                        <ul id="nav">
+                            <li><a href="#slider">TRANG CHỦ</a></li>
+                            <li><a href="#pofo">MÓN ĂN</a></li>
+                            <li><a href="#footer">TƯƠNG TÁC</a></li>
+                            <li class="js-search-btn">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                                <input class="search-input" type="text" name="" id="" placeholder="Search">
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- end: header -->
+                    <div class="menu-btn">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
     
-            </div>
+                </div>
+                <div>
+                    <i class="fa-solid fa-x  nav-close" id="nav-close" aria-hidden="true"></i>
+                </div>
+                <!-- end: menu -->
             <div>
                 <i class="fa-solid fa-x  nav-close" id="nav-close" aria-hidden="true"></i>
             </div>
             <!-- end: menu -->
         </div>
 
+<div id="banner">
+    <div class="slideshow-container">
+        <div class="mySlider fade">
+          <img class="anh_slider" src="./Assets/img_silder/mon1.jpg" style="width:100%" />
 
-        <div class="slideshow-container">
-            <div class="mySlider fade">
-              <img class="anh_slider" src="./Assets/img_silder/mon1.jpg" style="width:100%" />
-    
-            </div>
-            <div class="mySlider fade">
-              <img class="anh_slider" src="./Assets/img_silder/mon2.jpg" style="width:100%" />
-    
-            </div>
-            <div class="mySlider fade">
-              <img class="anh_slider" src="./Assets/img_silder/mon3.jpg" style="width:100%" />
-    
-            </div>
-            <div class="mySlider fade">
-              <img class="anh_slider" src="./Assets/img_silder/mon4.jpg" style="width:100%" />
-    
-            </div>
-            <div class="mySlider fade">
-              <img class="anh_slider" src="./Assets/img_silder/mon5.jpg" style="width:100%" />
-    
-            </div>
-            <a class="prev" onclick="plusSlider(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlider(1)">&#10095;</a>
-          </div>
-          <div style="text-align:center">
-            <span class="dot" onclick="currentSlider(1)" hidden></span>
-            <span class="dot" onclick="currentSlider(2)"hidden></span>
-            <span class="dot" onclick="currentSlider(3)"hidden></span>
-            <span class="dot" onclick="currentSlider(4)"hidden></span>
-            <span class="dot" onclick="currentSlider(5)"hidden></span>
-          </div>
+        </div>
+        <div class="mySlider fade">
+          <img class="anh_slider" src="./Assets/img_silder/mon2.jpg" style="width:100%" />
+
+        </div>
+        <div class="mySlider fade">
+          <img class="anh_slider" src="./Assets/img_silder/mon3.jpg" style="width:100%" />
+
+        </div>
+        <div class="mySlider fade">
+          <img class="anh_slider" src="./Assets/img_silder/mon4.jpg" style="width:100%" />
+
+        </div>
+        <div class="mySlider fade">
+          <img class="anh_slider" src="./Assets/img_silder/mon5.jpg" style="width:100%" />
+
+        </div>
+        <a class="prev" onclick="plusSlider(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlider(1)">&#10095;</a>
+      </div>
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlider(1)" hidden></span>
+        <span class="dot" onclick="currentSlider(2)"hidden></span>
+        <span class="dot" onclick="currentSlider(3)"hidden></span>
+        <span class="dot" onclick="currentSlider(4)"hidden></span>
+        <span class="dot" onclick="currentSlider(5)"hidden></span>
+      </div>
+</div>
+       
         <div id="pofo">
             <div id="filter">
                 <button class="btn active" onclick="filterSelection('ingredient','all')">ALL</button>
@@ -524,5 +529,6 @@
 <script src="./Assets/js/profo.js"></script>
 <script src="./Assets/js/food.js"></script>
 <script src="./Assets/js/header.js"></script>
+<script src="./Assets/js/contact.js"></script>
  
 </html>
