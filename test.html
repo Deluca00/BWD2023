@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #comment {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 100px;
+    }
+
+    .slider-cmt {
+        width: 80%;
+        height: 500px;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    .slides {
+        width: 500%;
+        height: auto;
+        display: flex;
+    }
+
+    .slides input {
+        display: none;
+    }
+
+    .slide {
+        width: 20%;
+        transition: 2s;
+        text-align: center;
+    }
+
+    .slide img {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        margin-bottom: 50px;
+    }
+
+    .slide h4 {
+        margin-bottom: 20px;
+        font-size: 35px; /* Chữ to hơn */
+    }
+
+    .slide p {
+        font-size: 28px; /* Chữ to hơn */
+    }
+
+    .navigation-manual {
+        position: absolute;
+        width: 80%;
+        margin-top: -40px;
+        display: none;
+        justify-content: center;
+    }
+
+    .manual-btn {
+        border: 2px solid #40D3DC;
+        padding: 5px;
+        border-radius: 10px;
+        cursor: pointer;
+        transform: 1s;
+    }
+
+    .manual-btn:not(:last-child) {
+        margin-right: 40px;
+    }
+
+    .manual-btn:hover {
+        background-color: #40D3DC;
+    }
+
+    #radio1:checked ~ .first {
+        margin-left: 0;
+    }
+
+    #radio2:checked ~ .first {
+        margin-left: -20%;
+    }
+
+    #radio3:checked ~ .first {
+        margin-left: -40%;
+    }
+
+    #radio4:checked ~ .first {
+        margin-left: -60%;
+    }
+
+    .navigation-auto {
+        position: absolute;
+        display: flex;
+        width: 80%;
+        justify-content: center;
+        margin-top: 460px;
+    }
+
+    .navigation-auto div {
+        border: 2px solid #40D3DC;
+        padding: 5px;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: 1s;
+    }
+
+    .navigation-auto div:not(:last-child) {
+        margin-right: 40px;
+    }
+
+    #radio1:checked ~ .navigation-auto .auto-btn1 {
+        background: #40D3DC;
+    }
+
+    #radio2:checked ~ .navigation-auto .auto-btn2 {
+        background: #40D3DC;
+    }
+
+    #radio3:checked ~ .navigation-auto .auto-btn3 {
+        background: #40D3DC;
+    }
+
+    #radio4:checked ~ .navigation-auto .auto-btn4 {
+        background: #40D3DC;
+    }
+</style>
+<body>
+    <div id="comment">
+
+        <div class="slider-cmt">
+            <div class="slides">
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <input type="radio" name="radio-btn" id="radio4">
+
+                <div class="slide first">
+                    <img src="./Assets/image test/1.jpg" alt="">
+                    <h4>Khanh</h4>
+                    <p>Cung cấp các kiến thức, mẹo hay, bí quyết nấu ăn, làm bánh ngon,... giúp bạn có thêm nhiều kiến thức nấu bếp hơn.</p>
+                </div>
+                <div class="slide">
+                    <img src="./Assets/image test/4.jpg" alt="">
+                    <h4>Thiện</h4>
+                    <p>Giao diện Tiếng Việt khá đơn giản và bắt mắt.</p>
+                </div>
+                <div class="slide">
+                    <img src="./Assets/image test/1.jpg" alt="">
+                    <h4>Bảo</h4>
+                    <p>Các công thức được mô tả rất chi tiết, kèm với hình ảnh minh họa từng bước giúp bạn dễ dàng hình dung các công đoạn.</p>
+                </div>
+                <div class="slide">
+                    <img src="./Assets/image test/4.jpg" alt="">
+                    <h4>Hoàng</h4>
+                    <p>Có các video dạy nấu ăn vô cùng chi tiết và hấp dẫn.</p>
+                </div>
+
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                    <div class="auto-btn4"></div>
+                </div>
+            </div>
+            <div class="navigation-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+                <label for="radio4" class="manual-btn"></label>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

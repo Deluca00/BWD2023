@@ -1,90 +1,326 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;1,100&display=swap');
 
-  #footer .container1{
-    max-width: 1170px;
-    margin:auto;
-  }
-  .row1{
-    display: flex;
-    flex-wrap: wrap;
-  }
-  ul{
-    list-style: none;
-  }
-  #footer{
-    background:#2b2c2f center ;
-    
-      padding: 70px 0;
-  }
-  .footer-col{
-     width: 25%;
-     padding: 0 15px;
-  }
-  .footer-col h4{
-    font-size: 18px;
-    color: red  ;
-    text-transform: capitalize;
-    margin-bottom: 35px;
-    font-weight: 500;
-    position: relative;
-    font-weight: 600;
-  }
-  .footer-col h4::before{
-    content: '';
-    position: absolute;
-    left:0;
-    bottom: -10px;
-    background-color: red;
-    height: 2px;
-    box-sizing: border-box;
-    width: 50px;
-  }
-  .footer-col ul li:not(:last-child){
-    margin-bottom: 10px;
-  }
-  .footer-col ul li a{
-    font-size: 16px;
-    text-transform: capitalize;
-    color: #fff;
-    text-decoration: none;
-    font-weight: 300;
-    color: #fff;
-    display: block;
-    transition: all 0.3s ease;
+  #contact {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #d47400;
+    padding-bottom: 100px;
+    box-sizing: border-box
   }
 
-  /*hover chu doi mau*/
-  .footer-col ul li a:hover{
-    color: rgb(247, 17, 17);
-    padding-left: 8px;
-    font-weight: 500;
-  }
-  .footer-col .social-links a{
-    display: inline-block;
-    height: 40px;
-    width: 40px;
-    background-color: #fff;
-    margin:0 10px 10px 0;
+
+  .section-header {
     text-align: center;
-    line-height: 40px;
-    border-radius: 50%;
+    margin: 0 auto;
+    padding: 40px 0;
+    
     color: black;
-    transition: all 0.5s ease;
-  }
-  .footer-col .social-links a:hover{
-    color: white;
-    background-color: black;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    font-weight: bold;
+    font-size:35px ;
   }
   
-  /*responsive*/
-  @media(max-width: 767px){
-    .footer-col{
-      width: 50%;
-      margin-bottom: 30px;
+  .contact-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 30px;
+    position: relative;
+    max-width: 840px;
+    border: 3px #fff dashed;
+    border-radius: 20px;
+   
   }
+  
+  /* Left contact page */
+  .form-horizontal {
+    /*float: left;*/
+    max-width: 400px;
+    font-family: 'Lato';
+    font-weight: 400;
   }
-  @media(max-width: 574px){
-    .footer-col{
-      width: 100%;
+  
+  .form-control, 
+  textarea {
+    width: 400px;
+    background-color: #000;
+    color: yellow;
+    letter-spacing: 1px;
+    margin-top: 20px;
+    border-radius: 10px;
+    height: 35px;
+    
   }
+  textarea{
+    width: 403px !important;
+    height: 150px !important;
   }
+  
+  .send-button {
+    margin-top: 15px;
+    height: 26px;
+    width: 410px;
+    overflow: hidden;
+    transition: all .2s ease-in-out;
+    border-radius: 10px;
+  }
+  
+  .alt-send-button {
+    width: 400px;
+    height: 34px;
+    transition: all .2s ease-in-out;
+  }
+  
+  .send-text {
+    display: block;
+    margin-top: 10px;
+    font: 700 12px 'Lato', sans-serif;
+    letter-spacing: 2px;
+  }
+  
+  .alt-send-button:hover {
+    transform: translate3d(0px, -28px, 0px);
+  }
+  
+  /* Begin Right Contact Page */
+  .direct-contact-container {
+    max-width: 400px;
+    
+  }
+  
+  /* Location, Phone, Email Section */
+  .contact-list {
+    list-style-type: none;
+    margin-left: -30px;
+    padding-right: 20px;
+  }
+  
+  .list-item {
+    line-height: 4;
+    color: #aaa;
+  }
+  
+  .contact-text {
+    font: 300 18px 'Lato', sans-serif;
+    letter-spacing: 1.9px;
+    color: black;
+    font-weight: 600;
+    font-family: 'Dancing Script', cursive !important;
+    font-size: 25px;
+  }
+  
+  .place {
+    margin-left: 62px;
+  }
+  
+  .phone {
+    margin-left: 56px;
+  }
+  
+  .gmail {
+    margin-left: 53px;
+  }
+  
+  .contact-text a {
+    color: black;
+    text-decoration: none;
+    transition-duration: 0.2s;
+    font-weight: 600;
+  }
+  
+  .contact-text a:hover {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  
+  /* Social Media Icons */
+  .social-media-list {
+    position: relative;
+    font-size: 22px;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+  }
+  
+  .social-media-list li a {
+    color: #fff;
+  }
+  
+  .social-media-list li {
+    position: relative; 
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    margin: 10px 3px;
+    line-height: 60px;
+    border-radius: 50%;
+    color: #fff;
+    background-color: rgb(27,27,27);
+    cursor: pointer; 
+    transition: all .2s ease-in-out;
+  }
+  
+  .social-media-list li:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 50%;
+    opacity: 0;
+    box-shadow: 0 0 0 1px #fff;
+    transition: all .2s ease-in-out;
+  }
+  
+  .social-media-list li:hover {
+    background-color: #fff; 
+  }
+  
+  .social-media-list li:hover:after {
+    opacity: 1;  
+    transform: scale(1.12);
+    transition-timing-function: cubic-bezier(0.37,0.74,0.15,1.65);
+  }
+  
+  .social-media-list li:hover a {
+    color: #000;
+  }
+  
+  .copyright {
+    font: 200 14px 'Oswald', sans-serif;
+    color: #fff;
+    letter-spacing: 1px;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  hr {
+    border-color: rgba(255,255,255,.6);
+  }
+
+
+  #map{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-left: 500px;
+    width: 850px;
+    height: 400px;
+  }
+
+    #icon{
+        color: white;
+    }
+
+
+  /*silder*/
+  
+  
+  /* Begin Media Queries*/
+  @media screen and (max-width: 850px) {
+    .contact-wrapper {
+      display: flex;
+      flex-direction: column;
+    }
+    .direct-contact-container, .form-horizontal {
+      margin: 0 auto;
+    }  
+    
+    .direct-contact-container {
+      margin-top: 60px;
+      max-width: 300px;
+      
+    }    
+    .social-media-list li {
+      height: 60px;
+      width: 60px;
+      line-height: 60px;
+    }
+    .social-media-list li:after {
+      width: 60px;
+      height: 60px;
+      line-height: 60px;
+    }
+  }
+  
+  
+  @media screen and (max-width: 569px) {
+  
+    .direct-contact-container, .form-wrapper {
+      float: none;
+      margin: 0 auto;
+    }  
+    .form-control, textarea {
+      
+      margin: 0 auto;
+    }
+   
+    
+    .name, .email, textarea {
+      width: 280px;
+    } 
+    
+    .direct-contact-container {
+      margin-top: 60px;
+      max-width: 280px;
+      
+    }  
+    .social-media-list {
+      left: 0;
+    }
+    .social-media-list li {
+      height: 55px;
+      width: 55px;
+      line-height: 55px;
+      font-size: 2rem;
+    }
+    .social-media-list li:after {
+      width: 55px;
+      height: 55px;
+      line-height: 55px;
+    }
+    
+  }
+  
+  @media screen and (max-width: 410px) {
+    .send-button {
+      width: 99%;
+    }
+  }
+
+
+  @media (min-width: 1400px) and (max-width: 1650px) {
+    #map{
+      margin-left: 300px;
+    }
+  }
+  @media (min-width: 1200px) and (max-width: 1399px) {
+    #map{
+      margin-left: 200px;
+    }
+  }
+  @media (min-width: 851px) and (max-width: 1199px) {
+    #map{
+      margin-left: 10px;
+
+    }
+  }
+  @media (min-width: 480px) and (max-width: 850px) {
+    #map{
+      margin-left: 10px;
+      width: 440px;
+    }
+  }
+
+ 
