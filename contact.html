@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="./Assets/css/reset.css">
   <link rel="stylesheet" href="./Assets/css/contact.css">
   <link rel="stylesheet" href="./Assets/css/footer.css">
+  <link rel="stylesheet" href="./Assets/css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="./Assets/css/silder_contact.css">
   
@@ -43,7 +44,7 @@
     <!-- Phan than -->
     <section id="contact">
 
-      <h1 class="section-header">Contact</h1>
+      <h1 class="section-header">Liên hệ với chúng tôi</h1>
 
       <div class="contact-wrapper">
 
@@ -53,7 +54,7 @@
 
           <div class="form-group">
             <div class="col-sm-12">
-              <input type="text" class="form-control" id="name" placeholder="NAME" name="name" value="" required>
+              <input type="text" class="form-control" id="name" placeholder="HỌ TÊN" name="name" value="" required>
             </div>
           </div>
 
@@ -63,7 +64,7 @@
             </div>
           </div>
 
-          <textarea class="form-control" rows="10" placeholder="MESSAGE" name="message" required></textarea>
+          <textarea class="form-control" rows="10" placeholder="ĐÓNG GÓP Ý KIẾN" name="message" required></textarea>
 
           <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">
             <div class="alt-send-button">
@@ -79,13 +80,13 @@
         <div class="direct-contact-container">
 
           <ul class="contact-list">
-            <li class="list-item"><i class="fa fa-map-marker fa-2x"><span class="contact-text place">Nơi đâu cx
+            <li class="list-item"><i id="icon"  class="fa fa-map-marker fa-2x"><span class="contact-text place">Nơi đâu cx
                   là nhà</span></i></li>
 
-            <li class="list-item"><i class="fa fa-phone fa-2x"><span class="contact-text phone"><a
+            <li class="list-item"><i id="icon"  class="fa fa-phone fa-2x"><span class="contact-text phone"><a
                     href="tel:1-212-555-5555" title="Give me a call">0782087247</a></span></i></li>
 
-            <li class="list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a href="mailto:#"
+            <li class="list-item"><i id="icon" class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a href="mailto:#"
                     title="Send me an email">baolathe@gamil.com</a></span></i></li>
 
           </ul>
@@ -93,21 +94,21 @@
           <hr>
           <ul class="social-media-list">
             <li><a href="#" target="_blank" class="contact-icon">
-                <i class="fa fa-github" aria-hidden="true"></i></a>
+              <i class="fa-brands fa-github fa-xl" aria-hidden="true"></i></a>
             </li>
             <li><a href="#" target="_blank" class="contact-icon">
-                <i class="fa fa-codepen" aria-hidden="true"></i></a>
+              <i class="fa-brands fa-facebook fa-xl" aria-hidden="true"></i></a>
             </li>
             <li><a href="#" target="_blank" class="contact-icon">
-                <i class="fa fa-twitter" aria-hidden="true"></i></a>
+              <i class="fa-brands fa-instagram fa-xl" aria-hidden="true"></i></a>
             </li>
             <li><a href="#" target="_blank" class="contact-icon">
-                <i class="fa fa-instagram" aria-hidden="true"></i></a>
+              <i class="fa-brands fa-twitter fa-xl" aria-hidden="true"></i></a>
             </li>
           </ul>
           <hr>
 
-          <div class="copyright">HELLLLLLLLO</div>
+          <div class="copyright">THANKS</div>
 
         </div>
 
@@ -116,24 +117,34 @@
 
       <div class="slideshow-container">
         <div class="mySlider fade">
-          <img src="./monan2.jpg" style="width:100%" />
+          <img class="anh_slider" src="./Assets/img_silder/mon1.jpg" style="width:100%" />
 
         </div>
         <div class="mySlider fade">
-          <img src="./monan1.jpg" style="width:100%" />
+          <img class="anh_slider" src="./Assets/img_silder/mon2.jpg" style="width:100%" />
 
         </div>
         <div class="mySlider fade">
-          <img src="./monan3.jpg" style="width:100%" />
+          <img class="anh_slider" src="./Assets/img_silder/mon3.jpg" style="width:100%" />
+
+        </div>
+        <div class="mySlider fade">
+          <img class="anh_slider" src="./Assets/img_silder/mon4.jpg" style="width:100%" />
+
+        </div>
+        <div class="mySlider fade">
+          <img class="anh_slider" src="./Assets/img_silder/mon5.jpg" style="width:100%" />
 
         </div>
         <a class="prev" onclick="plusSlider(-1)">&#10094;</a>
         <a class="next" onclick="plusSlider(1)">&#10095;</a>
       </div>
       <div style="text-align:center">
-        <span class="dot" onclick="currentSlider(1)"></span>
-        <span class="dot" onclick="currentSlider(2)"></span>
-        <span class="dot" onclick="currentSlider(3)"></span>
+        <span class="dot" onclick="currentSlider(1)" hidden></span>
+        <span class="dot" onclick="currentSlider(2)"hidden></span>
+        <span class="dot" onclick="currentSlider(3)"hidden></span>
+        <span class="dot" onclick="currentSlider(4)"hidden></span>
+        <span class="dot" onclick="currentSlider(5)"hidden></span>
       </div>
 
     </section>
@@ -155,22 +166,21 @@
                   </ul>
               </div>
               <div class="footer-col">
-                  <h4>Người phụ trách</h4>
+                  <h4>TEAM</h4>
                   <ul>
-                      <li><a href="#">FAQ</a></li>
-                      <li><a href="#">shipping</a></li>
-                      <li><a href="#">returns</a></li>
-                      <li><a href="#">order status</a></li>
-                      <li><a href="#">payment options</a></li>
+                      <li><a href="https://www.facebook.com/profile.php?id=100017145340114">Huỳnh Ngọc Khanh</a></li>
+                      <li><a href="https://www.facebook.com/profile.php?id=100022727594702">Võ Thiện</a></li>
+                      <li><a href="https://www.facebook.com/profile.php?id=100070373126042">Hồ Thế Bảo</a></li>
+                      
                   </ul>
               </div>
               <div class="footer-col">
                   <h4>hi</h4>
                   <ul>
-                      <li><a href="#">watch</a></li>
-                      <li><a href="#">bag</a></li>
-                      <li><a href="#">shoes</a></li>
-                      <li><a href="#">dress</a></li>
+                      <li><a href="#">WE</a></li>
+                      <li><a href="#">ARE</a></li>
+                      <li><a href="#">THE</a></li>
+                      <li><a href="#">BEST</a></li>
                   </ul>
               </div>
               <div class="footer-col">

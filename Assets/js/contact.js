@@ -10,7 +10,7 @@
     showSlider(slideIndex);
     var autoSlideInterval = setInterval(function () {
         plusSlider(1);
-    }, 2000);
+    }, 3000);
 
     function plusSlider(n) {
         showSlider(slideIndex += n);
