@@ -38,15 +38,7 @@ closeInput.addEventListener('click',
     function up() {
       back_color_menu.classList.remove('menu-scroll-down');
     }
-var counter = 1;
-        setInterval(function(){
-            document.getElementById('radio' + counter).checked = true;
-            counter++;
-            if (counter > 4){
-                counter =1;
 
-            }
-        }, 5000);
 
 
   const btn = document.querySelector('.menu-btn');

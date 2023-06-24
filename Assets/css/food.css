@@ -157,6 +157,7 @@
     height: 500px;
     background-size: cover;
     border-radius: 20px;
+    
   }
   
   .slideshow-container {
@@ -217,21 +218,26 @@
   
   .fade {
     -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.1s;
+    -webkit-animation-duration: 4s;
     animation-name: fade;
-    animation-duration: 1.1s;
+    animation-duration: 4s;
+    will-change: opacity;
   }
   
   @-webkit-keyframes fade {
-    from {opacity: .4}
+    from {opacity: 0.4}
     to {opacity: 1}
   }
   
   @keyframes fade {
-    from {opacity: .4}
+    from {opacity: 0.4}
     to {opacity: 1}
   }
   
   @media only screen and (max-width: 300px) {
     .prev, .next,.text {font-size: 11px}
+  }
+
+  .link-active{
+    text-decoration: none;
   }
