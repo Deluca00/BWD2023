@@ -243,8 +243,13 @@ swiper-slide {
     border-radius: 50%;
     margin-bottom: 50px;
 }
-.slide h4{
+.slide h4 {
     margin-bottom: 20px;
+    font-size: 35px; /* Chữ to hơn */
+}
+
+.slide p {
+    font-size: 28px; /* Chữ to hơn */
 }
 .navigation-manual{
 position: absolute;
