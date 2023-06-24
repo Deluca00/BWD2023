@@ -15,7 +15,7 @@ html {
     width: 100%;
     height: 87px;
     position: fixed;
-    z-index: 4;
+    z-index: 9;
     display: flex;
     justify-content: center;
 
@@ -270,3 +270,44 @@ swiper-slide {
     padding: 0 5px;
     line-height: 30px;
 }
+
+.add {
+    
+    position: fixed;
+    background-color: hsla(0, 0%, 100%, 0.3);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    backdrop-filter: blur(96px);
+    transition: .2s;
+    z-index: 9;
+  }
+.hidden-menu{
+    display: none;
+}
+#nav-mobile{
+    text-align: center;
+    margin-top: 100px;
+}
+
+.nav-mobile-item{
+margin-bottom: 20px;
+}
+
+.nav-mobile-item a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+.abc{
+    position: relative;
+}
+.exit-nav-menu{
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 50px;
+    color: white;
+}
+
