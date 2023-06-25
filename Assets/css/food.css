@@ -39,7 +39,7 @@
 }
 
 .overlay {
-    background: rgba(236, 228, 217, 0.75);
+    background-color: rgba(255, 89, 0, 0.6);
     position: absolute;
     top: 0;
     width: 100%;
@@ -49,11 +49,10 @@
 }
 
 .hover_text i {
-    margin: 20% auto;
+    margin: 25% auto;
     font-size: 50PX;
-    color: darkturquoise;
-    border: solid;
-    border-radius: 30px;
+    color: white;
+    
 }
 
 /* Style the buttons */
