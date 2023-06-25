@@ -237,8 +237,6 @@ swiper-slide img {
  
   
 }
-
-
 @media(max-width: 691px){
   #wp-content{
     display: inline-block;
