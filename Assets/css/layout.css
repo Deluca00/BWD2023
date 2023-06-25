@@ -1,4 +1,4 @@
-body {
+#warrper1 {
     font-size: 15px;
     line-height: 1.5;
 }
@@ -23,7 +23,7 @@ i{
   font-size: 1cm;
   cursor: pointer;
 }
-#warrper {
+#warrper1 {
     width: 90%;
     margin: 0 auto;
     border-radius: 20px;
