@@ -260,5 +260,16 @@ swiper-slide img {
   
   
 }
+@media (min-width: 400px) and (max-width: 625px) {
+  #wp-content{
+    width: 100%;
+  }
+  .mySwiper{
+    width: 100%;
+  }
+  .mySwiper2{
+    width: 100%;
+  }
+}
 
 

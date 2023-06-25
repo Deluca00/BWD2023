@@ -171,3 +171,23 @@
   }
  
 }
+
+@media (max-width: 500px){
+  .content h1 {
+
+    font-size: 20px;
+  }
+
+  .content h3 {
+    font-size: 15px;
+  }
+
+  .content .learn-btn {
+
+    width: 100px;
+    height: 20px;
+padding-bottom: 20px;
+margin-top: 10px;
+
+  }
+}
