@@ -399,7 +399,7 @@ margin-bottom: 20px;
 }
 
 
-/*phan footer*/
+/*phan footerf*/
 .tabs .nav-tabs{
     display: flex;
     justify-content: center;
@@ -612,6 +612,24 @@ margin-bottom: 20px;
     font-size: 20px;
   }
   
+  
+}
+@media (min-width: 400px) and (max-width: 625px) {
+    .formf .wp-contentf{
+    width: 100%;
+  }
+  .formf .mySwiper{
+    width: 100%;
+  }
+  .formf .mySwiper2{
+    width: 100%;
+  }
+  .formf .mySwiper3{
+    width: 100%;
+  }
+  .formf .mySwiper4{
+    width: 100%;
+  }
   
 }
 
