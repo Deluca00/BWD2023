@@ -77,7 +77,7 @@
 </div>
        
         <div id="pofo">
-            <div id="filter">
+            <div id="filter" >
                 <button class="btn active" onclick="filterSelection('ingredient','all')">ALL</button>
                 <button class="btn" onclick="filterSelection('ingredient','haisan')">HẢI SẢN</button>
                 <button class="btn" onclick="filterSelection('ingredient','thit')">THỊT</button>
@@ -85,11 +85,21 @@
                 <button class="btn" onclick="filterSelection('ingredient','dochay')">ĐỒ CHAY</button>
     
             </div>
+            <div id="minimenu">
+                <i class="fa-solid fa-bars"></i>
+                <ul class="sub-menu">
+                    <li><a onclick="filterSelection('ingredient','all')">ALL</a></li> 
+                    <li><a onclick="filterSelection('ingredient','haisan')">HẢI SẢN</a></li>
+                    <li><a onclick="filterSelection('ingredient','thit')">THỊT</a></li>
+                    <li><a onclick="filterSelection('ingredient','diemtam')">ĐIỂM TÂM</a></li>
+                    <li><a onclick="filterSelection('ingredient','dochay')">ĐỒ CHAY</a></li>
+                </ul>
+            </div>
             <section id="pof">
                 <div class="row">
                     <div class="col-md-4 mix cat1 cat4 ingredient haisan top10">
                         <div class="portfolio">
-                            <img src="./Assets/Images/fg1.jpg" alt="">
+                            <img src="./Assets/Images/haisan.jpg" alt="">
                             <div class="overlay">
                                 <div class="hover_text">
                                     <i class="fa-sharp fa-solid fa-plus" onclick="openForm('formhaisan')"></i>
@@ -107,6 +117,15 @@
                                             <button class="btn" onclick="filterSelection('fishh','cahoi')">CÁ
                                                 HỒI</button>
                                             <button class="btn" onclick="filterSelection('fishh','muc')">MỰC</button>
+                                        </div>
+                                        <div id="minimenu">
+                                            <i class="fa-solid fa-bars"></i>
+                                            <ul class="sub-menu">
+                                                <li><a onclick="filterSelection('fishh','all')">All</a></li>
+                                                <li><a onclick="filterSelection('fishh','tom')">TÔM</a></li>
+                                                <li><a onclick="filterSelection('fishh','cahoi')">CÁ HỒI</a></li>
+                                                <li><a onclick="filterSelection('fishh','muc')">MỰC</a></li>
+                                            </ul>
                                         </div>
                                         <div class="row container-mini">
                                             <div class="col-xl-3 col-lg-5 col-sm-15 fishh tom">
@@ -177,7 +196,7 @@
                     <div class="col-md-4 mix cat1 cat4 ingredient thit ">
     
                         <div class="portfolio">
-                            <img src="./Assets/Images/fg2.jpg" alt="">
+                            <img src="./Assets/Images/thit.jpg" alt="">
                             <div class="overlay">
                                 <div class="hover_text">
                                     <i class="fa-sharp fa-solid fa-plus" onclick="openForm('formthit')"></i>
@@ -196,6 +215,14 @@
                                             <button class="btn" onclick="filterSelection('thitt','thitbo')">THỊT
                                                 BÒ</button>
     
+                                        </div>
+                                        <div id="minimenu">
+                                            <i class="fa-solid fa-bars"></i>
+                                            <ul class="sub-menu">
+                                                <li><a onclick="filterSelection('thitt','all')">All</a></li>
+                                                <li><a onclick="filterSelection('thitt','thitheo')">THỊT HEO</a></li>
+                                                <li><a onclick="filterSelection('thitt','thitbo')">THỊT BÒ</a></li>
+                                            </ul>
                                         </div>
                                         <div class="row container-mini">
                                             <div class="col-xl-3 col-lg-5 col-sm-15 thitt thitheo">
@@ -285,7 +312,7 @@
                     </div>
                     <div class="col-md-4 mix cat1 cat4 ingredient diemtam">
                         <div class="portfolio">
-                            <img src="./Assets/Images/fg3.jpg" alt="">
+                            <img src="./Assets/Images/diemtam.jpg" alt="">
                             <div class="overlay">
                                 <div class="hover_text">
                                     <i class="fa-sharp fa-solid fa-plus" onclick="openForm('formdiemtam')"></i>
@@ -379,7 +406,7 @@
                     </div>
                     <div class="col-md-4 mix cat1 cat4 ingredient dochay">
                         <div class="portfolio">
-                            <img src="./Assets/Images/fg4.jpg" alt="">
+                            <img src="./Assets/Images/monchay.jpg" alt="">
                             <div class="overlay">
                                 <div class="hover_text">
                                     <i class="fa-sharp fa-solid fa-plus" onclick="openForm('formdochay')"></i>
