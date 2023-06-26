@@ -297,18 +297,17 @@ margin-bottom: 20px;
 
 .nav-mobile-item a{
     text-decoration: none;
-    color: white;
+    color: black;
     font-size: 20px;
+    font-weight: 500;
 }
-.abc{
-    position: relative;
-}
+
 .exit-nav-menu{
     position: absolute;
     top: 0;
     right: 0;
     font-size: 50px;
-    color: white;
+    color: black;
 }
 
 /* formlike */

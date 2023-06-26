@@ -79,11 +79,15 @@
   .menu-btn {
     cursor: pointer;
     float: right;
-    color: white;
+    color: black;
     line-height: 87px;
     display: inline;
     font-size: 30px;
   }
+
+  .menu-scroll-down {
+    background-color: rgba(246, 245, 243, 0);
+}
 
 
 
